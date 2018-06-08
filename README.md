@@ -15,4 +15,4 @@ libjpeg/djpeg |	615K | 	885M | image
 giflib/gif2rgb | 8.4M |	12G	| image
 libarchive/bsdtar | 90M	| 130G | archive	
 libressl/openssl |1.5M | 2.2G |	auth
-tcpdump/tcpdump	| 5.8M | 8.352 | network	
+tcpdump/tcpdump	| 5.8M | 8.352G | network	
