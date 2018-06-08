@@ -1,0 +1,27 @@
+# Local build dirs to ignore
+binutils/binutils-2.30
+libpng/libpng-1.6.34
+libjpeg/jpeg-9c
+giflib/giflib-5.1.4
+libarchive/libarchive-3.3.2
+libressl/libressl-2.1.6
+tcpdump/tcpdump-4.9.2
+
+# OS generated files 
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+.old/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf

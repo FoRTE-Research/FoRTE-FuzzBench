@@ -1,0 +1,13 @@
+binutils
+
+Install instructions:
+
+	tar -xf binutils-2.30.tar.xz binutils-2.30/
+	cd binutils-2.30/
+	./configure --disable-shared
+	make all
+	make install
+
+Running:
+	
+	afl-fuzz-saveinputs -i seed_dir -o out_dir -e 1440 -Q -- ./binutils-2.30/binutils/readelf -a @@

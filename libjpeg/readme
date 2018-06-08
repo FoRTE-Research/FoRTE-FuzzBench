@@ -1,0 +1,13 @@
+libjpeg
+
+Install instructions:
+
+	tar -xf jpegsrc.v9c.tar.gz jpeg-9c/
+	cd jpeg-9c/
+	./configure --disable-shared
+	make all
+	make install
+
+Running:
+	
+	afl-fuzz-saveinputs -i seed_dir -o out_dir -e 1440 -Q -- ./jpeg-9c/djpeg @@

@@ -1,0 +1,13 @@
+libressl
+
+Install instructions:
+
+	tar -xf libressl-2.1.6.tar.gz libressl-2.1.6/
+	cd libressl-2.1.6/
+	./configure --disable-shared
+	make all
+	make install
+
+Running:
+	
+	afl-fuzz-saveinputs -i seed_dir -o out_dir -e 1440 -Q -- ./libressl-2.1.6/apps/openssl/openssl x509 -in @@ -text -noout

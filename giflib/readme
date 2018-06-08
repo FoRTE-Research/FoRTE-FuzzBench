@@ -1,0 +1,13 @@
+libjpeg
+
+Install instructions:
+
+	tar -xf giflib-5.1.4.tar.bz2 giflib-5.1.4/
+	cd giflib-5.1.4/
+	./configure --disable-shared
+	make all
+	make install
+
+Running:
+	
+	afl-fuzz-saveinputs -i seed_dir -o out_dir -e 1440 -Q -- ./jpeg-9c/djpeg @@
