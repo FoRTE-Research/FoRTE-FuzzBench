@@ -2,10 +2,10 @@
 
 This repository contains a collection of benchmarks and seed inputs for easy fuzzing. 
 
-To install any benchmark, follow the instructions in its respective `readme` file.
+To install and run any benchmark, follow the instructions in its respective `readme` file.
 
 
-## Stats
+## Benchmark Stats
 -------------------------------------------------------
 libname/progname	: 	1min	: 	1day	:	type	
 -------------------------------------------------------
