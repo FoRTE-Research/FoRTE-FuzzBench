@@ -6,6 +6,8 @@ giflib/giflib-5.1.4
 libarchive/libarchive-3.3.2
 libressl/libressl-2.1.6
 tcpdump/tcpdump-4.9.2
+flac/flac-1.0.3/
+audiofile/audiofile-0.2.7
 
 # Outdirs
 binutils/binutils-2.30/out_dir
@@ -15,6 +17,9 @@ giflib/giflib-5.1.4/out_dir
 libarchive/libarchive-3.3.2/out_dir
 libressl/libressl-2.1.6/out_dir
 tcpdump/tcpdump-4.9.2/out_dir
+flac/flac-1.0.3/out_dir
+audiofile/audiofile-0.2.7/out_dir
+
 
 # OS generated files 
 .DS_Store

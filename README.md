@@ -2,7 +2,7 @@
 
 This repository contains a collection of benchmarks and seed inputs for easy fuzzing. 
 
-To install and run any benchmark, follow the instructions in its respective `readme` file.
+For instructions on installing and running any benchmark, please refer to its respective `readme` file.
 
 
 ## Benchmark Stats
@@ -15,4 +15,6 @@ libjpeg/djpeg |	615K | 	885M | image
 giflib/gif2rgb | 8.4M |	12G	| image
 libarchive/bsdtar | 90M	| 130G | archive	
 libressl/openssl |1.5M | 2.2G |	auth
-tcpdump/tcpdump	| 5.8M | 8.352G | network	
+tcpdump/tcpdump	| 5.8M | 8.35G | network	
+flac/flac | 400M | 576G | audio
+audiofile/sfconvert | 771K | 1.11G| audio
