@@ -7,7 +7,7 @@ To install and run any benchmark, follow the instructions in its respective `rea
 
 ## Benchmark Stats
 
----------------------------------------------------------
+
 | libname/progname	| 	1min	| 	1day	|	type	| 
 ---------------------------------------------------------
 | binutils/readelf 	|	2.4M	|	3.5G	|	bin		| 
@@ -17,4 +17,3 @@ To install and run any benchmark, follow the instructions in its respective `rea
 | libarchive/bsdtar | 	90M		| 	130G	|	archive	| 	
 | libressl/openssl	|	1.5M	|	2.2G	|	auth	| 
 | tcpdump/tcpdump	| 	5.8M	| 	8.352	| 	network	| 
----------------------------------------------------------
