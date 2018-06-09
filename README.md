@@ -7,16 +7,16 @@ For instructions on installing and running any benchmark, please refer to its re
 
 ## Benchmark Stats
 
-libname/progname | 1-min dump size | projected 1-day dump size | type 
---- | --- | --- | --- 
-binutils/readelf | 2.4M | 3.46G | binutils 
-libpng/pngtest | 331K |	476M | image 
-libjpeg/djpeg |	615K | 	885M | image 
-giflib/gif2rgb | 8.4M |	12.1G | image
-libarchive/bsdtar | 90M	| 130G | archive	
-libressl/openssl |1.5M | 2.16G | auth
-tcpdump/tcpdump	| 5.8M | 8.35G | network	
-flac/flac | 400M | 576G | audio
-audiofile/sfconvert | 771K | 1.11G| audio
-libxml/xmllint | 1.0M | 1.44G | xml
-poppler/pdftohtml | 512K | 737M | pdf
+libname/progname | 1-min dump size | projected 1-day dump size | inputs/sec | type 
+--- | --- | --- | --- | --- 
+binutils/readelf | 2.4M | 3.46G | 427 | binutils 
+libpng/pngtest | 331K |	476M | X | image 
+libjpeg/djpeg |	615K | 	885M | X | image 
+giflib/gif2rgb | 8.4M |	12.1G | X | image
+libarchive/bsdtar | 90M	| 130G | X | archive	
+libressl/openssl |1.5M | 2.16G | X | auth
+tcpdump/tcpdump	| 5.8M | 8.35G | X | network	
+flac/flac | 400M | 576G | X | audio
+audiofile/sfconvert | 771K | 1.11G | X | audio
+libxml/xmllint | 1.0M | 1.44G | X | xml
+poppler/pdftohtml | 512K | 737M | X | pdf
