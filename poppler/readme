@@ -11,4 +11,4 @@ Install instructions:
 
 Running:
 	
-	afl-fuzz-saveinputs -i seed_dir -x pdf.dict -o out_dir -e 1 -Q -- ./poppler-0.22.5/utils/pdftohtml @@
+	afl-fuzz-saveinputs -i seed_dir -x pdf.dict -o out_dir -e 1440 -Q -- ./poppler-0.22.5/utils/pdftohtml @@
