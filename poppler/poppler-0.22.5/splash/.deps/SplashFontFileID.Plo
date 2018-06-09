@@ -1,0 +1,10 @@
+SplashFontFileID.lo: SplashFontFileID.cc /usr/include/stdc-predef.h \
+ ../config.h SplashFontFileID.h ../goo/gtypes.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:
+
+SplashFontFileID.h:
+
+../goo/gtypes.h:

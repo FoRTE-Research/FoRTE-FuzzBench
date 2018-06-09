@@ -9,6 +9,7 @@ tcpdump/tcpdump-4.9.2
 flac/flac-1.0.3
 audiofile/audiofile-0.2.7
 libxml/libxml2-2.7.7
+plopper/poppler-0.22.5
 
 # Outdirs
 binutils/binutils-2.30/out_dir
@@ -21,6 +22,7 @@ tcpdump/tcpdump-4.9.2/out_dir
 flac/flac-1.0.3/out_dir
 audiofile/audiofile-0.2.7/out_dir
 libxml/libxml2-2.7.7/out_dir
+plopper/poppler-0.22.5/out_dir
 
 # OS generated files 
 .DS_Store

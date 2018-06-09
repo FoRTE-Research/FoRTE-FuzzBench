@@ -1,0 +1,14 @@
+plopper
+
+Install instructions:
+
+	tar -xf poppler-0.22.5.tar.gz poppler-0.22.5/
+	cd poppler-0.22.5/
+	apt-get install libfontconfig1-dev
+	./configure --disable-shared
+	make all
+	make install
+
+Running:
+	
+	afl-fuzz-saveinputs -i seed_dir -x pdf.dict -o out_dir -e 1440 -Q -- ./poppler-0.22.5/utils/pdftohtml @@

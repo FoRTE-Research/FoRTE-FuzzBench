@@ -1,0 +1,8 @@
+TiffWriter.lo: TiffWriter.cc /usr/include/stdc-predef.h TiffWriter.h \
+ ../poppler/poppler-config.h
+
+/usr/include/stdc-predef.h:
+
+TiffWriter.h:
+
+../poppler/poppler-config.h:
