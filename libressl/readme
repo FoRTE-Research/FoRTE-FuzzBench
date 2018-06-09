@@ -9,4 +9,4 @@ Install instructions:
 
 Running:
 	
-	afl-fuzz-saveinputs -i seed_dir -o out_dir -e 1440 -Q -- ./libressl-2.1.6/apps/openssl/openssl x509 -in @@ -text -noout
+	afl-fuzz-saveinputs -i seed_dir -o out_dir -e 1440 -Q -- ./libressl-2.1.6/apps/openssl x509 -in @@ -text -noout
