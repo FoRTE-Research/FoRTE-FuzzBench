@@ -2,7 +2,7 @@ audiofile
 
 Install instructions:
 
-	tar -xf audiofile-0.2.7.tar.gz
+	tar -xzf audiofile-0.2.7.tar.gz
 	cd audiofile-0.2.7/
 	./configure --disable-shared
 	make all
