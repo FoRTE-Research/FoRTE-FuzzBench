@@ -11,7 +11,7 @@ libname/progname | 1-min dump size | projected 1-day dump size | inputs/sec | ty
 --- | --- | --- | --- | --- 
 binutils/readelf | 2.4M | 3.46G | 427 | binutils 
 libpng/pngtest | 331K |	476M | X | image 
-libjpeg/djpeg |	615K | 	885M | X | image 
+libjpeg/djpeg |	615K | 	885M | 442 | image 
 giflib/gif2rgb | 8.4M |	12.1G | X | image
 libarchive/bsdtar | 90M	| 130G | X | archive	
 libressl/openssl |1.5M | 2.16G | X | auth
