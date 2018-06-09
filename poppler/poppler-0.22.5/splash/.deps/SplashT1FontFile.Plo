@@ -1,6 +1,0 @@
-SplashT1FontFile.lo: SplashT1FontFile.cc /usr/include/stdc-predef.h \
- ../config.h
-
-/usr/include/stdc-predef.h:
-
-../config.h:
