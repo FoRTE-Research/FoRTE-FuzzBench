@@ -10,4 +10,4 @@ Install instructions:
 
 Running:
 	
-	afl-fuzz-saveinputs -i seed_dir -o out_dir -e 1440 -Q -- ./jpeg-9c/djpeg @@
+	afl-fuzz-saveinputs -i seed_dir -o out_dir -e 1440 -Q -- ./giflib-5.1.4/util/gif2rgb @@
