@@ -1,0 +1,13 @@
+libxml
+
+Install instructions:
+
+	tar -xf libxml2-2.7.7.tar.gz libxml2-2.7.7/
+	cd libxml2-2.7.7/
+	./configure --disable-shared
+	make all
+	make install
+
+Running:
+	
+	afl-fuzz-saveinputs -i seed_dir -x xml.dict -o out_dir -e 1440 -Q -- ./libxml2-2.7.7/xmllint -o /dev/null @@
