@@ -1,7 +1,7 @@
 tcpdump
 
 Install instructions:
-
+	apt-get install libpcap-dev
 	tar -xf tcpdump-4.9.2.tar.gz
 	cd tcpdump-4.9.2/
 	./configure --disable-shared
