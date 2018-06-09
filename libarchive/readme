@@ -2,7 +2,7 @@ libarchive
 
 Install instructions:
 
-	tar -xf libarchive-3.3.2.tar.gz
+	tar -xzf libarchive-3.3.2.tar.gz
 	cd libarchive-3.3.2/
 	./configure --disable-shared
 	make all
