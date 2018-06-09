@@ -2,11 +2,10 @@ libjpeg
 
 Install instructions:
 
-	tar -xf jpegsrc.v9c.tar.gz jpeg-9c/
+	tar -xzf jpegsrc.v9c.tar.gz
 	cd jpeg-9c/
 	./configure --disable-shared
 	make all
-	make install
 
 Running:
 	
