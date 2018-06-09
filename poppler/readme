@@ -1,13 +1,12 @@
-plopper
+poppler
 
 Install instructions:
 
-	tar -xf poppler-0.22.5.tar.gz poppler-0.22.5/
-	cd poppler-0.22.5/
 	apt-get install libfontconfig1-dev
+	tar -xzf poppler-0.22.5.tar.gz
+	cd poppler-0.22.5/
 	./configure --disable-shared
 	make all
-	make install
 
 Running:
 	
