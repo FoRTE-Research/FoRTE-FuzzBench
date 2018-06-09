@@ -2,11 +2,10 @@ libxml
 
 Install instructions:
 
-	tar -xf libxml2-2.7.7.tar.gz libxml2-2.7.7/
+	tar -xzf libxml2-2.7.7.tar.gz
 	cd libxml2-2.7.7/
 	./configure --disable-shared
 	make all
-	make install
 
 Running:
 	
