@@ -2,11 +2,10 @@ tcpdump
 
 Install instructions:
 
-	tar -xf tcpdump-4.9.2.tar.gz tcpdump-4.9.2/
+	tar -xf tcpdump-4.9.2.tar.gz
 	cd tcpdump-4.9.2/
 	./configure --disable-shared
 	make all
-	make install
 
 Running:
 	
