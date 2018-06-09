@@ -18,5 +18,5 @@ libressl/openssl |1.5M | 2.16G | 22 | crypto
 tcpdump/tcpdump	| 5.8M | 8.35G | 917 | network	
 flac/flac | 400M | 576G | X | audio
 audiofile/sfconvert | 771K | 1.11G | 1176 | audio
-libxml/xmllint | 1.0M | 1.44G | X | web
+libxml/xmllint | 1.0M | 1.44G | 794 | web
 poppler/pdftohtml | 512K | 737M | X | pdf
