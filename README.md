@@ -19,4 +19,4 @@ tcpdump/tcpdump	| 5.8M | 8.35G | 917 | network
 flac/flac | 400M | 576G | X | audio
 audiofile/sfconvert | 771K | 1.11G | 1176 | audio
 libxml/xmllint | 1.0M | 1.44G | 794 | web
-poppler/pdftohtml | 512K | 737M | X | office
+poppler/pdftohtml | 512K | 737M | 49 | office
