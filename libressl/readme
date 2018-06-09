@@ -2,11 +2,10 @@ libressl
 
 Install instructions:
 
-	tar -xf libressl-2.1.6.tar.gz libressl-2.1.6/
+	tar -xf libressl-2.1.6.tar.gz
 	cd libressl-2.1.6/
 	./configure --disable-shared
 	make all
-	make install
 
 Running:
 	
