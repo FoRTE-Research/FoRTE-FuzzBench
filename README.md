@@ -20,3 +20,35 @@ flac/flac | 400M | 576G | X | audio
 audiofile/sfconvert | 771K | 1.11G | 1176 | audio
 libxml/xmllint | 1.0M | 1.44G | 794 | web
 poppler/pdftohtml | 512K | 737M | 49 | office
+
+## Creating an Input Corpus
+
+* Create a virtual machine with 1 processor, 6 GB of RAM, a host-only adapter
+* Install an ssh server on the VM
+* Build each desired benchmark
+* Make 7 copies of the VM
+* Start the VMs in headless mode and connect to each using ssh
+* In each vm:
+```
+sudo su
+echo core > /proc/sys/kernel/core_pattern
+cd /path/to/afl
+```
+* For each VM, pick run one of the following:
+```
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/binutils/seed_dir -o /media/sf_hugeData/readelf -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/binutils/binutils-2.30/binutils/readelf -a @@
+
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libjpeg/seed_dir/ -o /media/sf_hugeData/djpeg -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libjpeg/jpeg-9c/djpeg @@
+
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libarchive/seed_dir/ -o /media/sf_hugeData/bsdtar -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libarchive/libarchive-3.3.2/bsdtar -O -xf @@
+
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libressl/seed_dir/ -o /media/sf_hugeData/openssl -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libressl/libressl-2.1.6/apps/openssl x509 -in @@ -text -noout
+
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/tcpdump/seed_dir/ -o /media/sf_hugeData/tcpdump -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/tcpdump/tcpdump-4.9.2/tcpdump -nr @@
+
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/audiofile/seed_dir/ -o /media/sf_hugeData/sfconvert -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/audiofile/audiofile-0.2.7/sfcommands/sfconvert @@ out.mp3 format aiff
+
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libxml/seed_dir/ -x /home/fuzz/Desktop/fuzzing-benchmarks/libxml/xml.dict -o /media/sf_hugeData/xml -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libxml/libxml2-2.7.7/xmllint -o /dev/null @@
+
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/poppler/seed_dir/ -x /home/fuzz/Desktop/fuzzing-benchmarks/poppler/pdf.dict -o /media/sf_hugeData/pdftohtml -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/poppler/poppler-0.22.5/utils/pdftohtml @@
+```
