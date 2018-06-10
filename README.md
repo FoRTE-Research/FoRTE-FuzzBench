@@ -1,8 +1,8 @@
 # fuzzing-benchmarks
 
-This repository contains a collection of benchmarks and seed inputs for easy fuzzing. 
+This repository contains a collection of benchmarks and seed inputs to make fuzzing more easily comparable and reproducable. 
 
-For instructions on installing and running any benchmark, please refer to its respective `readme` file.
+For instructions on installing and running a given benchmark, refer to the `readme` file in is respective directory.
 
 
 ## Benchmark Stats
@@ -23,18 +23,21 @@ poppler/pdftohtml | 512K | 737M | 49 | office
 
 ## Creating an Input Corpus
 
-* Create a virtual machine with 1 processor, 6 GB of RAM, a host-only adapter
+* Create a virtual machine with 1 processor and 6 GB of RAM and add a host-only adapter
 * Install an ssh server on the VM
-* Build each desired benchmark
+* Build `afl` and `afl-qemu`
+* Build each desired benchmark following the instructions in its directory
+* Shutdown the VM
 * Make 7 copies of the VM
 * Start the VMs in headless mode and connect to each using ssh
-* In each vm:
+* In each VM:
 ```
 sudo su
 echo core > /proc/sys/kernel/core_pattern
+exit
 cd /path/to/afl
 ```
-* For each VM, pick run one of the following:
+* For each VM, pick run one of the following (examples):
 ```
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/binutils/seed_dir -o /media/sf_hugeData/readelf -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/binutils/binutils-2.30/binutils/readelf -a @@
 
