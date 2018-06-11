@@ -17,7 +17,7 @@ libarchive/bsdtar | 90M	| 25G | 657 | archive
 libressl/openssl |1.5M | 1.7G | 22 | crypto
 tcpdump/tcpdump	| 5.8M | 2.9G | 917 | network	
 flac/flac | 400M | 576G | X | audio
-audiofile/sfconvert | 771K | 1.11G | 1176 | audio
+audiofile/sfconvert | 771K | 12G | 1176 | audio
 libxml/xmllint | 1.0M | 1.44G | 794 | web
 poppler/pdftohtml | 512K | 737M | 49 | office
 
