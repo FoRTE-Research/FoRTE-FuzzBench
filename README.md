@@ -9,7 +9,7 @@ For instructions on installing and running a given benchmark, refer to the `read
 
 libname/progname | 1-min dump size | projected 1-day dump size | inputs/sec | type 
 --- | --- | --- | --- | --- 
-binutils/readelf | 2.4M | 3.46G | 427 | dev 
+binutils/readelf | 2.4M | 4.1G | 427 | dev 
 libpng/pngtest | 331K |	476M | X | image 
 libjpeg/djpeg |	615K | 	885M | 442 | image 
 giflib/gif2rgb | 8.4M |	12.1G | X | image
