@@ -8,6 +8,8 @@ compilerXX="afl-clang++"
 export PATH=$PATH:/home/mdhicks2/Desktop/afl
 export AFL_PATH=/home/mdhicks2/Desktop/afl
 
+find . -maxdepth 1 -type d -exec bash -c "cd {}; pwd; tar -xf *.tar.*" \;
+
 cd binutils/binutils-2.30
 make distclean
 ./configure --disable-shared CC=${compiler} CXX=${compilerXX} CFLAGS="-g -O2 -no-pie"
