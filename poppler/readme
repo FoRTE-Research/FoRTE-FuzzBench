@@ -1,11 +1,11 @@
-poppler
+poppler/pdftohtml
 
 Install instructions:
 
 	apt-get install libfontconfig1-dev
 	tar -xzf poppler-0.22.5.tar.gz
 	cd poppler-0.22.5/
-	./configure --disable-shared
+	./configure --disable-shared CFLAGS=-no-pie
 	make all
 
 Running:

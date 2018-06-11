@@ -1,10 +1,10 @@
-libarchive
+libarchive/bsdtar
 
 Install instructions:
 
 	tar -xzf libarchive-3.3.2.tar.gz
 	cd libarchive-3.3.2/
-	./configure --disable-shared
+	./configure --disable-shared CFLAGS=-no-pie
 	make all
 
 Running:

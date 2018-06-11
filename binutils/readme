@@ -1,13 +1,11 @@
-readelf of binutils
+binutils/readelf
 
 Install instructions:
 
 	tar -xzf binutils-2.30.tar.xz
 	cd binutils-2.30/
-	./configure --disable-shared
+	./configure --disable-shared CFLAGS=-no-pie
 	make all
-
-Note that readelf is located in binutils/
 
 Running:
 	

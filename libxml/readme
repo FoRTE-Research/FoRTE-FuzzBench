@@ -1,10 +1,10 @@
-libxml
+libxml/xmmlint
 
 Install instructions:
 
 	tar -xzf libxml2-2.7.7.tar.gz
 	cd libxml2-2.7.7/
-	./configure --disable-shared
+	./configure --disable-shared CFLAGS=-no-pie
 	make all
 
 Running:

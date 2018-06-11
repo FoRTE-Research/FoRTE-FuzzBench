@@ -1,10 +1,10 @@
-libjpeg
+libjpeg/djpeg
 
 Install instructions:
 
 	tar -xzf jpegsrc.v9c.tar.gz
 	cd jpeg-9c/
-	./configure --disable-shared
+	./configure --disable-shared CFLAGS=-no-pie
 	make all
 
 Running:

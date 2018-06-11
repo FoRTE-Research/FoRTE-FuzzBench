@@ -1,10 +1,10 @@
-libressl
+libressl/openssl
 
 Install instructions:
 
 	tar -xzf libressl-2.1.6.tar.gz
 	cd libressl-2.1.6/
-	./configure --disable-shared
+	./configure --disable-shared CFLAGS=-no-pie
 	make all
 
 Running:

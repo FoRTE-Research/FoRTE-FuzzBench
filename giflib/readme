@@ -1,10 +1,10 @@
-libjpeg
+giflib/gif2rgb
 
 Install instructions:
 
 	tar -xf giflib-5.1.4.tar.bz2 giflib-5.1.4/
 	cd giflib-5.1.4/
-	./configure --disable-shared
+	./configure --disable-shared CFLAGS=-no-pie
 	make all
 	make install
 
