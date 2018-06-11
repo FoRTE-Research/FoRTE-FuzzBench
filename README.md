@@ -19,7 +19,7 @@ tcpdump/tcpdump	| 5.8M | 2.9G | 917 | network
 flac/flac | 400M | 576G | X | audio
 audiofile/sfconvert | 771K | 12G | 1176 | audio
 libxml/xmllint | 1.0M | 1.44G | 794 | web
-poppler/pdftohtml | 512K | 737M | 49 | office
+poppler/pdftohtml | 512K | 223M | 49 | office
 
 ## Creating an Input Corpus
 
