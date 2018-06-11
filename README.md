@@ -7,7 +7,7 @@ For instructions on installing and running a given benchmark, refer to the `read
 
 ## Benchmark Stats
 
-libname/progname | 1-min dump size | projected 1-day dump size | inputs/sec | type | afl-llvm
+libname/progname | 1-min dump size | 1-day dump size | inputs/sec | type | afl-llvm
 --- | --- | --- | --- | --- | --- 
 binutils/readelf | 2.4M | 4.1G | 427 | dev | [x]
 libpng/pngtest | 331K |	476M |  | image | [x]
