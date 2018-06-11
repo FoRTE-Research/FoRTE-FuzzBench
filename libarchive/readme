@@ -4,7 +4,7 @@ Install instructions:
 
 	tar -xzf libarchive-3.3.2.tar.gz
 	cd libarchive-3.3.2/
-	./configure --disable-shared CFLAGS=-no-pie
+	./configure --disable-shared CFLAGS="-g -O2 -Wall -Wformat -Wformat-security -no-pie"
 	make all
 
 Running:

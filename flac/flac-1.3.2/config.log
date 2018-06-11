@@ -698,7 +698,7 @@ configure:17726: gcc -o conftest -g -O2   conftest.c  >&5
 conftest.c:38:6: warning: conflicting types for built-in function 'lround'
  char lround ();
       ^
-/tmp/cccFlQjO.o: In function `main':
+/tmp/ccb3vLZd.o: In function `main':
 /mnt/bigdata/fuzzing-benchmarks/flac/flac-1.3.2/conftest.c:42: undefined reference to `lround'
 collect2: error: ld returned 1 exit status
 configure:17726: $? = 1
@@ -1383,6 +1383,7 @@ config.status:1328: creating objs/release/bin/Makefile
 config.status:1328: creating objs/release/lib/Makefile
 config.status:1328: creating microbench/Makefile
 config.status:1328: creating config.h
+config.status:1509: config.h is unchanged
 config.status:1557: executing depfiles commands
 config.status:1557: executing libtool commands
 configure:23702: result:

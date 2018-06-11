@@ -5,7 +5,7 @@ Install instructions:
 	apt-get install libfontconfig1-dev
 	tar -xzf poppler-0.22.5.tar.gz
 	cd poppler-0.22.5/
-	./configure --disable-shared CFLAGS=-no-pie
+	./configure --disable-shared CFLAGS="-Wall -g -O2 -no-pie"
 	make all
 
 Running:

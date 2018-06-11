@@ -4,7 +4,7 @@ Install instructions:
 
 	tar -xzf libressl-2.1.6.tar.gz
 	cd libressl-2.1.6/
-	./configure --disable-shared CFLAGS=-no-pie
+	./configure --disable-shared CFLAGS="-Wall -std=gnu99 -g -O2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_SOURCE -D_GNU_SOURCE  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-strong -Wno-pointer-sign -DHAVE_GNU_STACK -no-pie"
 	make all
 
 Running:

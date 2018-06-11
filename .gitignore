@@ -12,17 +12,17 @@ libxml/libxml2-2.7.7
 poppler/poppler-0.22.5
 
 # Outdirs
-binutils/binutils-2.30/out_dir
-libpng/libpng-1.6.34/out_dir
-libjpeg/jpeg-9c/out_dir
-giflib/giflib-5.1.4/out_dir
-libarchive/libarchive-3.3.2/out_dir
-libressl/libressl-2.1.6/out_dir
-tcpdump/tcpdump-4.9.2/out_dir
-flac/flac-1.0.3/out_dir
-audiofile/audiofile-0.2.7/out_dir
-libxml/libxml2-2.7.7/out_dir
-poppler/poppler-0.22.5/out_dir
+binutils/out_dir
+libpng/out_dir
+libjpeg/out_dir
+giflib/out_dir
+libarchive/out_dir
+libressl/out_dir
+tcpdump/out_dir
+flac/out_dir
+audiofile/out_dir
+libxml/out_dir
+poppler/out_dir
 
 # OS generated files 
 .DS_Store

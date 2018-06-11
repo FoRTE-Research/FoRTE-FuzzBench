@@ -4,7 +4,7 @@ Install instructions:
 
 	tar -xzf jpegsrc.v9c.tar.gz
 	cd jpeg-9c/
-	./configure --disable-shared CFLAGS=-no-pie
+	./configure --disable-shared CFLAGS="-g -O2 -no-pie"
 	make all
 
 Running:

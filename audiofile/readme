@@ -4,7 +4,7 @@ Install instructions:
 
 	tar -xzf audiofile-0.2.7.tar.gz
 	cd audiofile-0.2.7/
-	./configure --disable-shared CFLAGS=-no-pie
+	./configure --disable-shared CFLAGS="-g -O2 -no-pie"
 	make all
 
 Running:

@@ -4,7 +4,7 @@ Install instructions:
 	apt-get install libpcap-dev
 	tar -xzf tcpdump-4.9.2.tar.gz
 	cd tcpdump-4.9.2/
-	./configure --disable-shared
+	./configure --disable-shared CFLAGS="-g -O2 -no-pie"
 	make all
 
 Running:

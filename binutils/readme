@@ -4,7 +4,7 @@ Install instructions:
 
 	tar -xzf binutils-2.30.tar.xz
 	cd binutils-2.30/
-	./configure --disable-shared CFLAGS=-no-pie
+	./configure --disable-shared CFLAGS="-g -O2 -no-pie"
 	make all
 
 Running:
