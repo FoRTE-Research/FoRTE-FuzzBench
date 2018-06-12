@@ -249,9 +249,9 @@ AWK = mawk
 CC = gcc
 CCAS = gcc
 CCASDEPMODE = depmode=gcc3
-CCASFLAGS = -g -O2
+CCASFLAGS = -O3 -funroll-loops -g  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -D_FORTIFY_SOURCE=2 -fvisibility=hidden -msse2 -no-pie
 CCDEPMODE = depmode=gcc3
-CFLAGS = -O3 -funroll-loops -g  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -D_FORTIFY_SOURCE=2 -fvisibility=hidden -msse2
+CFLAGS = -O3 -funroll-loops -O3 -funroll-loops -g  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -D_FORTIFY_SOURCE=2 -fvisibility=hidden -msse2 -no-pie -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -D_FORTIFY_SOURCE=2 -fvisibility=hidden -msse2
 CPP = gcc -E
 CPPFLAGS = -DNDEBUG  -DFLAC__USE_VISIBILITY_ATTR
 CXX = g++
