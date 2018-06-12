@@ -51,7 +51,7 @@ cd /path/to/afl
 
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/audiofile/seed_dir/ -o /media/sf_hugeData/sfconvert -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/audiofile/audiofile-0.2.7/sfcommands/sfconvert @@ out.mp3 format aiff
 
-./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libxml/seed_dir/ -x /home/fuzz/Desktop/fuzzing-benchmarks/libxml/xml.dict -o /media/sf_hugeData/xml -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libxml/libxml2-2.7.7/xmllint -o /dev/null @@
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libxml/seed_dir/ -x /home/fuzz/Desktop/fuzzing-benchmarks/libxml/xml.dict -o /media/sf_hugeData/xml -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libxml/libxml2-2.7.7/xmllint --valid --recover --debug --noent @@
 
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/poppler/seed_dir/ -x /home/fuzz/Desktop/fuzzing-benchmarks/poppler/pdf.dict -o /media/sf_hugeData/pdftohtml -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/poppler/poppler-0.22.5/utils/pdftohtml @@
 ```
