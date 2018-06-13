@@ -1,0 +1,6 @@
+poly1305-sse2-amd64.lo: poly1305-sse2-amd64.S /usr/include/stdc-predef.h \
+ ../config.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:

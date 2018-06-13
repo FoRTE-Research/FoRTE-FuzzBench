@@ -1,0 +1,6 @@
+rijndael-ssse3-amd64-asm.lo: rijndael-ssse3-amd64-asm.S \
+ /usr/include/stdc-predef.h ../config.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:

@@ -1,0 +1,60 @@
+.\" Created from Texinfo source by yat2m 1.31
+.TH GPG-ERROR-CONFIG 1 2018-06-12 "Libgpg-error 1.31" "GnuPG"
+.SH NAME
+.B gpg-error-config
+\- Script to get information about the installed version of libgpg-error
+.SH SYNOPSIS
+.B  gpg-error-config
+.RI [ options ]
+
+.SH DESCRIPTION
+\fBgpg-error-config\fR is a tool that is used to configure to
+determine the compiler and linker flags that should be used to compile
+and link programs that use Libgpg-error. It is also used
+internally to the \fB.m4\fR macros for GNU autoconf that are included
+with Libgpg-error.
+
+.SH OPTIONS
+
+\fBgpg-error-config\fR accepts the following options:
+
+
+.TP
+.B   --mt
+Provide output appropriate for multithreaded programs.  \fB--mt\fR
+is only useful when combined with other options, and must be the first
+option if present.
+
+.TP
+.B  --version
+Print the currently installed version of Libgpg-error on the
+standard output.
+
+.TP
+.B  --libs
+Print the linker flags that are necessary to link a program using
+Libgpg-error.
+
+.TP
+.B  --cflags
+Print the compiler flags that are necessary to compile a program using
+Libgpg-error.
+
+.TP
+.B  --prefix=\fIprefix\fR
+If specified, use \fIprefix\fR instead of the installation prefix that
+Libgpg-error was built with when computing the output for the
+\fB--cflags\fR and \fB--libs\fR options.  This option is also
+used for the exec prefix if \fB--exec-prefix\fR was not specified.
+This option must be specified before any \fB--libs\fR or
+\fB--cflags\fR options.
+
+.TP
+.B  --exec-prefix=\fIprefix\fR
+If specified, use \fIprefix\fR instead of the installation exec prefix
+that Libgpg-error was built with when computing the output for the
+\fB--cflags\fR and \fB--libs\fR options.  This option must be
+specified before any \fB--libs\fR or \fB--cflags\fR options.
+
+.P
+

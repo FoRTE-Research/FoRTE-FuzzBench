@@ -1,0 +1,6 @@
+blowfish-amd64.lo: blowfish-amd64.S /usr/include/stdc-predef.h \
+ ../config.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:

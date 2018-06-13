@@ -1,0 +1,6 @@
+chacha20-avx2-amd64.lo: chacha20-avx2-amd64.S /usr/include/stdc-predef.h \
+ ../config.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:

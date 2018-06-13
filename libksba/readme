@@ -1,0 +1,12 @@
+libksba/cert-basic
+
+Install instructions:
+
+	tar -xf libksba-1.3.5.tar.bz2 libksba-1.3.5/
+	cd libksba-1.3.5/
+	./configure --disable-shared CFLAGS="-g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wpointer-arith -Wno-pointer-sign -fvisibility=hidden -no-pie"
+	make all
+
+Running:
+	
+	afl-fuzz-saveinputs -i seed_dir -o out_dir -e 1 -Q -- ./libksba-1.3.5/tests/cert-basic @@

@@ -1,0 +1,6 @@
+sha256-ssse3-amd64.lo: sha256-ssse3-amd64.S /usr/include/stdc-predef.h \
+ ../config.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:

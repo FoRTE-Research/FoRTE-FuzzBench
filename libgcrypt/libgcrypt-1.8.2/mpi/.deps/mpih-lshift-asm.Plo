@@ -1,0 +1,8 @@
+mpih-lshift-asm.lo: mpih-lshift-asm.S /usr/include/stdc-predef.h sysdep.h \
+ asm-syntax.h
+
+/usr/include/stdc-predef.h:
+
+sysdep.h:
+
+asm-syntax.h:

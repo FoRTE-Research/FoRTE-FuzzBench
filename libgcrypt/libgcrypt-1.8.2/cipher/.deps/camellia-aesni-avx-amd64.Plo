@@ -1,0 +1,6 @@
+camellia-aesni-avx-amd64.lo: camellia-aesni-avx-amd64.S \
+ /usr/include/stdc-predef.h ../config.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:

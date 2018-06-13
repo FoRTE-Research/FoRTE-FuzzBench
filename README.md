@@ -7,22 +7,22 @@ For instructions on installing and running a given benchmark, refer to the `read
 
 ## Benchmark Stats
 
-libname/progname | 1-min dump size | 1-day dump size | inputs/sec | type | afl-llvm | qemu | dyninst | ipt
+libname/progname | 1-min dump | 1-day dump | inputs/sec | type | afl-llvm | qemu | dyninst | ipt
 --- | --- | --- | --- | --- | --- | --- | --- | ---
 binutils/readelf | 2.4M | 4.1G | 427 | dev | [x] | [x] | [x]
 libpng/pngtest | 331K |	476M |  | image | [x] | [x] | [x]
 libjpeg/djpeg |	615K | 	885M | 442 | image | [x] | [x] | [x]
 giflib/gif2rgb | 8.4M |	12.1G |  | image | [x] | [x] | [x]
 libarchive/bsdtar | 90M	| 25G | 657 | archive	| [x] | [x] |
-libressl/openssl |1.5M | 1.7G | 22 | crypto | [x] | [x] |
 tcpdump/tcpdump	| 5.8M | 2.9G | 917 | network	| [x] | [x] | [x]
 flac/flac | 400M | 576G |  | audio | [x] | [x] | [x]
 audiofile/sfconvert | 771K | 12G | 1176 | audio | [x] | [x]
 libxml/xmllint | 1.0M | 1.44G | 794 | web | [x] | [x]
 poppler/pdftohtml | 512K | 223M | 49 | office | [x] | [x] | [x]
+libksba/cert-basic | 1.8M | 2.60G | | crypto | | | 
 
 ## Creating an Input Corpus
-
+s
 * Create a virtual machine with 1 processor and 6 GB of RAM and add a host-only adapter
 * Install an ssh server on the VM
 * Build `afl` and `afl-qemu`
@@ -45,8 +45,6 @@ cd /path/to/afl
 
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libarchive/seed_dir/ -o /media/sf_hugeData/bsdtar -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libarchive/libarchive-3.3.2/bsdtar -O -xf @@
 
-./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libressl/seed_dir/ -o /media/sf_hugeData/openssl -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libressl/libressl-2.1.6/apps/openssl x509 -in @@ -text -noout
-
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/tcpdump/seed_dir/ -o /media/sf_hugeData/tcpdump -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/tcpdump/tcpdump-4.9.2/tcpdump -nr @@
 
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/audiofile/seed_dir/ -o /media/sf_hugeData/sfconvert -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/audiofile/audiofile-0.2.7/sfcommands/sfconvert @@ out.mp3 format aiff
@@ -54,4 +52,6 @@ cd /path/to/afl
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libxml/seed_dir/ -x /home/fuzz/Desktop/fuzzing-benchmarks/libxml/xml.dict -o /media/sf_hugeData/xml -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libxml/libxml2-2.7.7/xmllint -o /dev/null @@
 
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/poppler/seed_dir/ -x /home/fuzz/Desktop/fuzzing-benchmarks/poppler/pdf.dict -o /media/sf_hugeData/pdftohtml -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/poppler/poppler-0.22.5/utils/pdftohtml @@
+
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libksba/seed_dir/ -o /media/sf_hugeData/libksba -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libksba/libksba-1.3.5/tests/cert-basic @@
 ```

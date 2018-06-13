@@ -1,0 +1,8 @@
+mpih-add1-asm.lo: mpih-add1-asm.S /usr/include/stdc-predef.h sysdep.h \
+ asm-syntax.h
+
+/usr/include/stdc-predef.h:
+
+sysdep.h:
+
+asm-syntax.h:
