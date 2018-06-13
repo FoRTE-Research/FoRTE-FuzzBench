@@ -4,10 +4,9 @@ This repository contains a collection of benchmarks and seed inputs to make fuzz
 
 For instructions on installing and running a given benchmark, refer to the `readme` file in is respective directory.
 
-
 ## Benchmark Stats
 
-libname/progname | 1-min dump | 1-day dump | inputs/sec | type | afl-llvm | qemu | dyninst | ipt
+libname/progname | 1-min dump size | 1-day dump size | inputs/sec | type | afl-llvm | qemu | dyninst | ipt
 --- | --- | --- | --- | --- | --- | --- | --- | ---
 binutils/readelf | 2.4M | 4.1G | 427 | dev | [x] | [x] | [x]
 libpng/pngtest | 331K |	476M |  | image | [x] | [x] | [x]
@@ -22,7 +21,7 @@ poppler/pdftohtml | 512K | 223M | 49 | office | [x] | [x] | [x]
 libksba/cert-basic | 1.8M | 2.60G | | crypto | | | 
 
 ## Creating an Input Corpus
-s
+
 * Create a virtual machine with 1 processor and 6 GB of RAM and add a host-only adapter
 * Install an ssh server on the VM
 * Build `afl` and `afl-qemu`
@@ -49,7 +48,7 @@ cd /path/to/afl
 
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/audiofile/seed_dir/ -o /media/sf_hugeData/sfconvert -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/audiofile/audiofile-0.2.7/sfcommands/sfconvert @@ out.mp3 format aiff
 
-./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libxml/seed_dir/ -x /home/fuzz/Desktop/fuzzing-benchmarks/libxml/xml.dict -o /media/sf_hugeData/xml -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libxml/libxml2-2.7.7/xmllint -o /dev/null @@
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libxml/seed_dir/ -x /home/fuzz/Desktop/fuzzing-benchmarks/libxml/xml.dict -o /media/sf_hugeData/xml -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libxml/libxml2-2.7.7/xmllint --valid --recover --debug --noent @@
 
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/poppler/seed_dir/ -x /home/fuzz/Desktop/fuzzing-benchmarks/poppler/pdf.dict -o /media/sf_hugeData/pdftohtml -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/poppler/poppler-0.22.5/utils/pdftohtml @@
 
