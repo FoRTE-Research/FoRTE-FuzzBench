@@ -1,5 +1,0 @@
-arcfour-amd64.lo: arcfour-amd64.S /usr/include/stdc-predef.h ../config.h
-
-/usr/include/stdc-predef.h:
-
-../config.h:

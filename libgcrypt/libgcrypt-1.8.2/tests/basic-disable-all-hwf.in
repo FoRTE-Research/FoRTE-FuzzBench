@@ -1,4 +1,0 @@
-#!/bin/sh
-
-echo "      now running 'basic' test with all hardware features disabled."
-exec ./basic@EXEEXT@ --disable-hwf all

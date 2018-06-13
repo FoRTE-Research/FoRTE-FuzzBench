@@ -1,4 +1,0 @@
-     ../src/err-sources.h \
-     ../src/err-codes.h \
-     ../src/argparse.c \
-     ../src/gpg-error.c

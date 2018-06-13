@@ -1,6 +1,0 @@
-sha512-avx-amd64.lo: sha512-avx-amd64.S /usr/include/stdc-predef.h \
- ../config.h
-
-/usr/include/stdc-predef.h:
-
-../config.h:

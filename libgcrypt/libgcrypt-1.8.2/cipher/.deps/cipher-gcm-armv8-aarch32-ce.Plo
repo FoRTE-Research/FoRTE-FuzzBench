@@ -1,6 +1,0 @@
-cipher-gcm-armv8-aarch32-ce.lo: cipher-gcm-armv8-aarch32-ce.S \
- /usr/include/stdc-predef.h ../config.h
-
-/usr/include/stdc-predef.h:
-
-../config.h:
