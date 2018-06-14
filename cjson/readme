@@ -1,0 +1,12 @@
+cjson/cjson
+
+Install instructions:
+	tar -xzf cjson-1.7.7.tar.gz
+	cd cjson-1.7.7
+	make all
+	cd fuzzing
+	make all
+	
+Running:
+
+	afl-fuzz-saveinputs -i seed_dir -o out_dir -e 1440 -Q -- ./cjson-1.7.7/fuzzing/cjson @@
