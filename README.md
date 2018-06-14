@@ -19,7 +19,7 @@ audiofile/sfconvert | 771K | 12G | 1176 | audio | [x] | [x]
 poppler/pdftohtml | 512K | 223M | 49 | office | [x] | [x] | [x]
 libksba/cert-basic | 1.8M | 11G | 165 | crypto | [x] | [x] | 
 harfbuzz/main | 214M | | | office | | 
-cjson | | | 530 | web | [x] | [x] | 
+cjson/cjson | | | 530 | web | [x] | [x] | 
 
 ## Creating an Input Corpus
 
@@ -54,5 +54,5 @@ cd /path/to/afl
 
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libksba/seed_dir/ -o /media/sf_hugeData/libksba -t 100 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libksba/libksba-1.3.5/tests/cert-basic @@
 
-./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/cjson/fuzzing/inputs -o /media/sf_hugeData/cjson -t 100 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/cjson/fuzzing/cjson @@
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/cjson/cjson/fuzzing/inputs -o /media/sf_hugeData/cjson -t 100 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/cjson/cjson/fuzzing/cjson @@
 ```
