@@ -52,5 +52,5 @@ cd /path/to/afl
 
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libksba/seed_dir/ -o /media/sf_hugeData/libksba -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libksba/libksba-1.3.5/tests/cert-basic @@
 
-./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/harfbuzz/seed_dir/ -o /media/sf_hugeData/libksba -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/harfbuzz/harfbuzz-1.8.1/src/main @@
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/harfbuzz/seed_dir/ -o /media/sf_hugeData/harfbuzz -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/harfbuzz/harfbuzz-1.8.1/src/main @@
 ```
