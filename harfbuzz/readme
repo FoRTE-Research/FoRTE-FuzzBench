@@ -1,0 +1,12 @@
+harfbuzz/
+
+Install instructions:
+
+	tar -xf harfbuzz-1.8.1.tar.bz2 harfbuzz-1.8.1/
+	cd harfbuzz-1.8.1/
+	./configure --disable-shared CFLAGS="-g -O2 -no-pie"
+	make all
+
+Running:
+	
+	afl-fuzz-saveinputs -i seed_dir -o out_dir -e 1440 -Q -- ./harfbuzz-1.8.1/src/main @@

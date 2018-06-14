@@ -16,9 +16,9 @@ libarchive/bsdtar | 90M	| 25G | 657 | archive	| [x] | [x] |
 tcpdump/tcpdump	| 5.8M | 2.9G | 917 | network	| [x] | [x] | [x]
 flac/flac | 400M | 576G |  | audio | [x] | [x] | [x]
 audiofile/sfconvert | 771K | 12G | 1176 | audio | [x] | [x]
-libxml/xmllint | 1.0M | 1.44G | 794 | web | [x] | [x]
 poppler/pdftohtml | 512K | 223M | 49 | office | [x] | [x] | [x]
 libksba/cert-basic | 1.8M | 2.60G | | crypto | | | 
+harfbuzz/main | 214M | | | font | | 
 
 ## Creating an Input Corpus
 
@@ -48,9 +48,9 @@ cd /path/to/afl
 
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/audiofile/seed_dir/ -o /media/sf_hugeData/sfconvert -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/audiofile/audiofile-0.2.7/sfcommands/sfconvert @@ out.mp3 format aiff
 
-./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libxml/seed_dir/ -x /home/fuzz/Desktop/fuzzing-benchmarks/libxml/xml.dict -o /media/sf_hugeData/xml -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libxml/libxml2-2.9.8/xmllint --valid --recover --debug --noent @@
-
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/poppler/seed_dir/ -x /home/fuzz/Desktop/fuzzing-benchmarks/poppler/pdf.dict -o /media/sf_hugeData/pdftohtml -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/poppler/poppler-0.22.5/utils/pdftohtml @@
 
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/libksba/seed_dir/ -o /media/sf_hugeData/libksba -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/libksba/libksba-1.3.5/tests/cert-basic @@
+
+./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/harfbuzz/seed_dir/ -o /media/sf_hugeData/libksba -t 9999 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/harfbuzz/harfbuzz-1.8.1/src/main @@
 ```
