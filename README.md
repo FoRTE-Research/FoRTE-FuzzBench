@@ -18,7 +18,7 @@ flac/flac | 400M | 576G |  | audio | [x] | [x] | [x]
 audiofile/sfconvert | 771K | 12G | 1176 | audio | [x] | [x]
 libxml/xmllint | 1.0M | 1.44G | 794 | web | [x] | [x]
 poppler/pdftohtml | 512K | 223M | 49 | office | [x] | [x] | [x]
-libksba/cert-basic | 1.8M | 2.60G | | crypto | [x] | [x] | 
+libksba/cert-basic | 1.8M | 11G | 165 | crypto | [x] | [x] | 
 
 ## Creating an Input Corpus
 
