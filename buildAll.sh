@@ -31,13 +31,6 @@ make distclean
 make all
 cd ../..
 
-cd libressl/libressl-2.1.6
-make clean
-make distclean
-./configure --disable-shared CC=${compiler} CXX=${compilerXX} CFLAGS="-Wall -std=gnu99 -g -O2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_SOURCE -D_GNU_SOURCE  -fno-strict-overflow -D_FORTIFY_SOURCE=2 -fstack-protector-strong -Wno-pointer-sign -DHAVE_GNU_STACK -no-pie"
-make all
-cd ../..
-
 cd tcpdump/tcpdump-4.9.2
 make clean
 make distclean
@@ -77,6 +70,14 @@ cd flac/flac-1.3.2
 make clean
 make distclean
 ./configure --disable-shared CC=${compiler} CXX=${compilerXX} CFLAGS="-O3 -funroll-loops -g  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -D_FORTIFY_SOURCE=2 -fvisibility=hidden -msse2 -no-pie"
+make all
+cd ../..
+
+sudo apt-get install libgpg-error-dev
+make clean
+make distclean
+cd libksba/libksba-1.3.5
+./configure --disable-shared CFLAGS="-g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wpointer-arith -Wno-pointer-sign -fvisibility=hidden -no-pie"
 make all
 cd ../..
 
