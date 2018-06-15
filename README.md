@@ -19,7 +19,7 @@ audiofile/sfconvert | 771K | 12G | 1176 | audio | [x] | [x]
 poppler/pdftohtml | 512K | 223M | 49 | office | [x] | [x] | [x]
 libksba/cert-basic | 1.8M | 11G | 165 | crypto | [x] | [x] | 
 harfbuzz/main | 214M | | | office | | 
-cjson/cjson | | | 530 | web | [x] | [x] | 
+cjson/cjson | 7.1M | | 530 | web | [x] | [x] | 
 
 ## Creating an Input Corpus
 
