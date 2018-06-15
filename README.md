@@ -56,3 +56,24 @@ cd /path/to/afl
 
 ./afl-fuzz-saveinputs -i /home/fuzz/Desktop/fuzzing-benchmarks/cjson/seed_dir/ -o /media/sf_hugeData/cjson -x /home/fuzz/Desktop/fuzzing-benchmarks/cjson/json.dict -t 100 -e 1440 -Q -- /home/fuzz/Desktop/fuzzing-benchmarks/cjson/cjson-1.7.7/fuzzing/cjson @@
 ```
+
+## Collecting benchmark binaries
+
+To gather the benchmark binary files in the top-level directory:
+
+```
+python collectBins.py
+```
+
+Make sure to verify that the base binaries are non-pie:
+
+```
+find . -maxdepth 1 -name "*Original" -exec bash -c "echo {}; readelf -l {} | grep Entry" \;
+```
+
+
+To gather and rename the benchmark binaries after building with `afl-clang`:
+
+```
+python collectBins.py -q
+```
