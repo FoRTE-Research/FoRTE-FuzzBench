@@ -80,6 +80,13 @@ make distclean
 make all
 cd ../..
 
+cd harfbuzz/harfbuzz-1.8.1
+make clean
+make distclean
+./configure --disable-shared CC=${compiler} CXX=${compilerXX} CFLAGS="-g -O2 -no-pie"
+make all
+cd ../..
+
 cd cjson/cjson-1.7.7
 make clean
 make distclean
