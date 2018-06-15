@@ -20,7 +20,7 @@ benches.append(('pdftohtml', basePath + '/poppler/poppler-0.22.5/utils', '@@', 1
 
 benches.append(('cert-basic', basePath + '/libksba/libksba-1.3.5/tests', '@@', 14253400))
 
-benches.append(('cjson', basePath + '/cjson/cjson-1.7.7/fuzzing', '@@', 22662992))
+benches.append(('cjson', basePath + '/cjson/cjson-1.7.7/fuzzing', '@@', 26932046))
 
 
 postfix = 'Original'
