@@ -78,7 +78,7 @@ cd $baseDir
 cd libksba/libksba-1.3.5 || exit 1
 make clean
 make distclean
-./configure --disable-shared CFLAGS="-g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wpointer-arith -Wno-pointer-sign -fvisibility=hidden -no-pie" || exit 1
+./configure --disable-shared CC=${compiler} CXX=${compilerXX} CFLAGS="-g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wpointer-arith -Wno-pointer-sign -fvisibility=hidden -no-pie" || exit 1
 make all  || exit 1
 cd $baseDir
 
