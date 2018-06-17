@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#compiler="gcc"
-#compilerXX="g++"
-compiler="afl-clang"
-compilerXX="afl-clang++"
+compiler="gcc"
+compilerXX="g++"
+#compiler="afl-clang"
+#compilerXX="afl-clang++"
 
 baseDir=`pwd`
 
@@ -92,7 +92,7 @@ cd $baseDir
 cd cjson/cjson-1.7.7 || exit 1
 make clean
 make distclean
-CC=compiler CXX=compilerXX make all || exit 1
+CC=$compiler CXX=$compilerXX make all || exit 1
 cd fuzzing || exit 1
-CC=compiler CXX=compilerXX make all  || exit 1
+CC=$compiler CXX=$compilerXX make all  || exit 1
 cd $baseDir
