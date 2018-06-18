@@ -1,5 +1,9 @@
 poppler/pdftohtml
 
+Note:
+
+	As of 6/18, you must use clang/clang++ to build poppler due to a bug in gcc/g++ that cause it to build a PIE binary.
+	
 Install instructions:
 
 	apt-get install libfontconfig1-dev
