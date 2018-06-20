@@ -14,7 +14,7 @@ benches.append(('bsdtar', basePath + '/libarchive/libarchive-3.3.2', '-O -xf @@'
 
 benches.append(('tcpdump', basePath + '/tcpdump/tcpdump-4.9.2', '-nr @@', 27718903))
 
-benches.append(('sfconvert', basePath + '/audiofile/audiofile-0.2.7/sfcommands', '@@ out.mp3 format aiff', 29782782))
+benches.append(('sfconvert', basePath + '/audiofile/audiofile-0.2.7/sfcommands', '@@ out.mp3 format aiff', 8265403))
 
 benches.append(('pdftohtml', basePath + '/poppler/poppler-0.22.5/utils', '@@', 1290406))
 
