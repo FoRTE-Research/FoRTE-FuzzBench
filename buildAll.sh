@@ -9,6 +9,7 @@ baseDir=`pwd`
 
 export PATH=$PATH:/home/mdhicks2/Desktop/afl
 export AFL_PATH=/home/mdhicks2/Desktop/afl
+export AFL_DONT_OPTIMIZE=1
 
 find . -maxdepth 1 -type d -exec bash -c "cd {}; pwd; tar -xf *.tar.*" \;
 
