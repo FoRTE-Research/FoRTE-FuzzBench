@@ -23,7 +23,7 @@ benches.append(('cert-basic', basePath + '/libksba/libksba-1.3.5/tests', '@@', 1
 benches.append(('cjson', basePath + '/cjson/cjson-1.7.7/fuzzing', '@@', 26932046))
 
 
-postfix = 'Original'
+postfix = 'Error'
 if len(sys.argv) == 2:
     if sys.argv[1] == '-p':
         for bench in benches:
@@ -31,14 +31,26 @@ if len(sys.argv) == 2:
             print 'export FSF_BENCH_ARGS=' + bench[2]
             print 'export FSF_NUM_INPUTS=' + str(bench[3]/INPUT_DIV)
         exit(0)
-    if sys.argv[1] == '-w':
+    elif sys.argv[1] == '-o':
+        postfix = 'Original'
+    elif sys.argv[1] == '-w':
         postfix = 'WB'
+    elif sys.argv[1] == '-b':
+        postfix = 'Baseline'
+    else:
+        print 'Usage:'
+        print '\t-o: collect original binaries'
+        print '\t-w: collect afl-llvm binaries'
+        print '\t-b: collect WB baseline binaries'
+        print '\t-p: print eval environmental vars'
+        exit(1)
 else:
     print 'Usage:'
-    print '\t-b: collect baseline binaries'
+    print '\t-o: collect original binaries'
     print '\t-w: collect afl-llvm binaries'
+    print '\t-b: collect WB baseline binaries'
     print '\t-p: print eval environmental vars'
-    exit(0)
+    exit(1)
     
 for bench in benches:
     command = ('cp', bench[1] + '/' + bench[0], bench[0] + postfix)
