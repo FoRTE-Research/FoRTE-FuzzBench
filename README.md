@@ -7,7 +7,7 @@ For instructions on installing and running a given benchmark, refer to the `read
 ## Benchmark Stats
 
 libname/progname | 1-day dump size | inputs/day | type | afl-llvm | qemu | dyninst | ipt
---- | --- | --- | --- | --- | --- | --- | --- | ---
+--- | --- | --- | --- | --- | --- | --- | ---
 binutils/readelf | 4.1G | 14.9M | dev | [x] | [x] | [x]
 libpng/pngtest |	476M |  | image | [x] | [x] | [x]
 libjpeg/djpeg | 	885M | 14.5M | image | [x] | [x] | [x]
