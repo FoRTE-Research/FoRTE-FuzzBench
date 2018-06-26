@@ -6,20 +6,20 @@ For instructions on installing and running a given benchmark, refer to the `read
 
 ## Benchmark Stats
 
-libname/progname | 1-min dump size | 1-day dump size | inputs/sec | type | afl-llvm | qemu | dyninst | ipt
+libname/progname | 1-day dump size | inputs/day | type | afl-llvm | qemu | dyninst | ipt
 --- | --- | --- | --- | --- | --- | --- | --- | ---
-binutils/readelf | 2.4M | 4.1G | 427 | dev | [x] | [x] | [x]
-libpng/pngtest | 331K |	476M |  | image | [x] | [x] | [x]
-libjpeg/djpeg |	615K | 	885M | 442 | image | [x] | [x] | [x]
-giflib/gif2rgb | 8.4M |	12.1G |  | image | [x] | [x] | [x]
-libarchive/bsdtar | 90M	| 25G | 657 | archive	| [x] | [x] |
-tcpdump/tcpdump	| 5.8M | 2.9G | 917 | network	| [x] | [x] | [x]
-flac/flac | 400M | 576G |  | audio | [x] | [x] | [x]
-audiofile/sfconvert | 771K | 14.3G | 1176 | audio | [x] | [x]
-poppler/pdftohtml | 512K | 223M | 49 | office | [x] | [x] | [x]
-libksba/cert-basic | 1.8M | 11G | 165 | crypto | [x] | [x] | 
-harfbuzz/main | 214M | | | office | | 
-cjson/cjson | 7.1M | 159G | 530 | web | [x] | [x] | 
+binutils/readelf | 4.1G | 14.9M | dev | [x] | [x] | [x]
+libpng/pngtest |	476M |  | image | [x] | [x] | [x]
+libjpeg/djpeg | 	885M | 14.5M | image | [x] | [x] | [x]
+giflib/gif2rgb |	12.1G |  | image | [x] | [x] | [x]
+libarchive/bsdtar | 25G | 21.0M | archive	| [x] | [x] |
+tcpdump/tcpdump	| 2.9G | 27.1M | network	| [x] | [x] | [x]
+flac/flac | 576G |  | audio | [x] | [x] | [x]
+audiofile/sfconvert | 14.3G | 10.1M | audio | [x] | [x]
+poppler/pdftohtml | 223M | 1.2M | office | [x] | [x] | [x]
+libksba/cert-basic | 11G | 10.7M | crypto | [x] | [x] | 
+harfbuzz/main | | | office | | 
+cjson/cjson | 159G | 25.6M | web | [x] | [x] | 
 
 ## Creating an Input Corpus
 
