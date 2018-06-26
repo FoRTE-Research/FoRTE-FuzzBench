@@ -8,18 +8,18 @@ For instructions on installing and running a given benchmark, refer to the `read
 
 libname/progname | 1-day dump size | inputs/day | type | afl-llvm | qemu | dyninst | ipt
 --- | --- | --- | --- | --- | --- | --- | ---
-binutils/readelf | 4.1G | 14.9M | dev | [x] | [x] | [x]
-libpng/pngtest |	476M |  | image | [x] | [x] | [x]
-libjpeg/djpeg | 	885M | 14.5M | image | [x] | [x] | [x]
-giflib/gif2rgb |	12.1G |  | image | [x] | [x] | [x]
-libarchive/bsdtar | 25G | 21.0M | archive	| [x] | [x] |
-tcpdump/tcpdump	| 2.9G | 27.1M | network	| [x] | [x] | [x]
-flac/flac | 576G |  | audio | [x] | [x] | [x]
-audiofile/sfconvert | 14.3G | 10.1M | audio | [x] | [x]
-poppler/pdftohtml | 223M | 1.2M | office | [x] | [x] | [x]
-libksba/cert-basic | 11G | 10.7M | crypto | [x] | [x] | 
+binutils/readelf | 3.8G | 14.9M | dev | [x] | [x] | [x]
+libpng/pngtest | |  | image | [x] | [x] | [x]
+libjpeg/djpeg | 	4.5G | 14.5M | image | [x] | [x] | [x]
+giflib/gif2rgb |	 |  | image | [x] | [x] | [x]
+libarchive/bsdtar | 30.1G | 21.0M | archive	| [x] | [x] |
+tcpdump/tcpdump	| 2.7G | 27.1M | network	| [x] | [x] | [x]
+flac/flac |  |  | audio | [x] | [x] | [x]
+audiofile/sfconvert | 3.7G | 10.1M | audio | [x] | [x]
+poppler/pdftohtml | 0.2G | 1.2M | office | [x] | [x] | [x]
+libksba/cert-basic | 7.5G | 10.7M | crypto | [x] | [x] | 
 harfbuzz/main | | | office | | 
-cjson/cjson | 159G | 25.6M | web | [x] | [x] | 
+cjson/cjson | 90.9G | 25.6M | web | [x] | [x] | 
 
 ## Creating an Input Corpus
 
