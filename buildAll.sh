@@ -1,7 +1,7 @@
 #!/bin/bash
 
-compiler="gcc"
-compilerXX="g++"
+compiler="clang"
+compilerXX="clang++"
 #compiler="afl-clang"
 #compilerXX="afl-clang++"
 
