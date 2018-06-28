@@ -41,14 +41,14 @@ if len(sys.argv) == 2:
         print 'Usage:'
         print '\t-o: collect original binaries'
         print '\t-w: collect afl-llvm binaries'
-        print '\t-b: collect WB baseline binaries'
+        print '\t-b: collect WB baseline/untracer binaries'
         print '\t-p: print eval environmental vars'
         exit(1)
 else:
     print 'Usage:'
     print '\t-o: collect original binaries'
     print '\t-w: collect afl-llvm binaries'
-    print '\t-b: collect WB baseline binaries'
+    print '\t-b: collect WB baseline/untracer binaries'
     print '\t-p: print eval environmental vars'
     exit(1)
     
