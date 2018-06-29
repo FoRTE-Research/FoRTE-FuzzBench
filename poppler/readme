@@ -9,7 +9,7 @@ Install instructions:
 	apt-get install libfontconfig1-dev
 	tar -xzf poppler-0.22.5.tar.gz
 	cd poppler-0.22.5/
-	./configure --disable-shared CC=${compiler} CXX=${compilerXX} CFLAGS="-Wall -g -O2 -no-pie" CXXFLAGS="-Wall -Woverloaded-virtual -Wnon-virtual-dtor -Wcast-align -fno-exceptions -fno-check-new -fno-common -g -O2 -ansi"
+	./configure --disable-shared CC=${compiler} CXX=${compilerXX} CFLAGS="-Wall -g -O2 -no-pie" CXXFLAGS="-Wall -Woverloaded-virtual -Wnon-virtual-dtor -Wcast-align -fno-exceptions -fno-check-new -fno-common -g -O2 -ansi -no-pie"
 	make all
 
 Note:
