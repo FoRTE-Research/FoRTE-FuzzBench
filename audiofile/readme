@@ -4,8 +4,8 @@ Install instructions:
 
 	tar -xzf audiofile-0.2.7.tar.gz
 	cd audiofile-0.2.7/
-	./configure --disable-shared CFLAGS="-g -O2 -no-pie"
-	make all
+	./configure --disable-shared CFLAGS="-g -O2 -no-pie" CXXFLAGS="-g -O2 -no-pie"
+	CC=gcc CXX=g++ make all
 
 Running:
 	

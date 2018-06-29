@@ -4,8 +4,8 @@ Install instructions:
 
 	tar -xf harfbuzz-1.8.1.tar.bz2 harfbuzz-1.8.1/
 	cd harfbuzz-1.8.1/
-	./configure --disable-shared CFLAGS="-g -O2 -no-pie"
-	make all
+	./configure --disable-shared CFLAGS="-g -O2 -no-pie" CXXFLAGS="-fno-rtti -g -O2 -fno-exceptions -fno-threadsafe-statics -Wcast-align -fvisibility-inlines-hidden --std=c++0x -no-pie"
+	CC=gcc CXX=g++ make all
 
 Running:
 	
