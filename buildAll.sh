@@ -4,7 +4,7 @@
 #compilerXX="clang++"
 compiler="afl-clang"
 compilerXX="afl-clang++"
-#passToAS="-Wa,-F"
+passToAS="-Wa,-F"
 
 baseDir=`pwd`
 
@@ -94,7 +94,7 @@ cd $baseDir
 cd cjson/cjson-1.7.7 || exit 1
 make clean
 make distclean
-CC=$compiler CXX=$compilerXX CFLAGS="${passToAS} -g -O2 -no-pie" make all || exit 1
+CC=$compiler CXX=$compilerXX CFLAGS="${passToAS} -g -O2 -no-pie -Wno-error" make all || exit 1
 cd fuzzing || exit 1
-CC=$compiler CXX=$compilerXX CFLAGS="${passToAS} -g -O2 -no-pie" make all  || exit 1
+CC=$compiler CXX=$compilerXX CFLAGS="${passToAS} -g -O2 -no-pie -Wno-error" make all  || exit 1
 cd $baseDir
