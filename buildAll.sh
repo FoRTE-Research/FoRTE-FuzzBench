@@ -52,7 +52,7 @@ cd $baseDir
 cd poppler/poppler-0.22.5 || exit 1
 make clean
 make distclean
-./configure --disable-shared CC=${compiler} CXX=${compilerXX} CFLAGS="${passToAS} -Wall -g -O2 -no-pie" || exit 1
+./configure --disable-shared CC=${compiler} CXX=${compilerXX} CFLAGS="${passToAS} -Wall -g -O2 -no-pie" CXXFLAGS="${passToAS} -Wall -Woverloaded-virtual -Wnon-virtual-dtor -Wcast-align -fno-exceptions -fno-check-new -fno-common -g -O2 -ansi" || exit 1
 make all  || exit 1
 cd $baseDir
 
