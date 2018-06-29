@@ -5,7 +5,7 @@ Install instructions:
 	tar -xzf tcpdump-4.9.2.tar.gz
 	cd tcpdump-4.9.2/
 	./configure --disable-shared CFLAGS="-g -O2 -no-pie"
-	CC=gcc make all
+	make all
 
 Running:
 	
