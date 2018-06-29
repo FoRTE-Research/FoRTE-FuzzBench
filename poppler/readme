@@ -1,16 +1,11 @@
 poppler/pdftohtml
-
-Note:
-
-	As of 6/18, you must use clang/clang++ to build poppler due to a bug in gcc/g++ that causes it to fail building non-PIE binaries correctly. In this case, you need to use:
-	"./configure --disable-shared CC=clang CXX=clang++ ...""
 	
 Install instructions:
 
 	apt-get install libfontconfig1-dev
 	tar -xzf poppler-0.22.5.tar.gz
 	cd poppler-0.22.5/
-	./configure --disable-shared CC=clang CXX=clang++ CFLAGS="-Wall -g -O2 -no-pie" CXXFLAGS="-Wall -Woverloaded-virtual -Wnon-virtual-dtor -Wcast-align -fno-exceptions -fno-check-new -fno-common -g -O2 -ansi -no-pie"
+	./configure --disable-shared CFLAGS="-Wall -g -O2 -no-pie" CXXFLAGS="-Wall -Woverloaded-virtual -Wnon-virtual-dtor -Wcast-align -fno-exceptions -fno-check-new -fno-common -g -O2 -ansi -no-pie"
 	make all
 
 Running:
