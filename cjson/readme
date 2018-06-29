@@ -3,9 +3,9 @@ cjson/cjson
 Install instructions:
 	tar -xzf cjson-1.7.7.tar.gz
 	cd cjson-1.7.7
-	CC=gcc CXX=g++ -g -O2 -no-pie -Wno-error" make all
+	CC=gcc CXX=g++ CFLAGS="-g -O2 -no-pie -Wno-error" make all
 	cd fuzzing
-	CC=gcc CXX=g++ -g -O2 -no-pie -Wno-error" make all
+	CC=gcc CXX=g++ CFLAGS="-g -O2 -no-pie -Wno-error" make all
 	
 Running:
 
