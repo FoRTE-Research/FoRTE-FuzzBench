@@ -6,7 +6,7 @@ This repository contains a collection of benchmarks and seed inputs to make fuzz
 
 |             |                |
 |-------------|----------------|
-|**AUTHOR:**  | Stefan Nagy | FoRTE-Research |
+|**AUTHOR:**  | Stefan Nagy |
 |**EMAIL:**   | snagy2@vt.edu |
 |**LICENSE:** | [MIT License](LICENSE) |
 |**DISCLAIMER:**   | This software is strictly a research prototype. |
