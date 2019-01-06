@@ -12,6 +12,9 @@ For instructions on installing and running a given benchmark, refer to the `read
 |**DISCLAIMER:**   | This software is strictly a research prototype. |
 
 ## Benchmark Statistics
+We utilized [Dyninst](https://dyninst.org/) to compute the following bechmark statistics for the 8 binaries evaluated in our paper *[
+Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](https://arxiv.org/abs/1812.11875)*. Note that we compiled all with Clang/Clang++, and ignore [a number of](https://github.com/FoRTE-Research/UnTracer-AFL/blob/master/UnTracerDyninst.cpp#L378) compiler-inserted initialization functions.  
+
 progname | libname | basic blocks | edges (outgoing) | edges (incoming)
 --- | --- | --- | --- | ---
 bsdtar		|libarchive |31032	|43390	|43432
