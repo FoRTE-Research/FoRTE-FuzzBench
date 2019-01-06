@@ -11,7 +11,7 @@ For instructions on installing and running a given benchmark, refer to the `read
 |**LICENSE:** | [MIT License](LICENSE) |
 |**DISCLAIMER:**   | This software is strictly a research prototype. |
 
-## Benchmark Stats
+## Benchmark Statistics
 
 libname/progname | 1-day dump size | inputs/day | 100ms timeouts | basic blocks (dyninst) | type | afl-llvm | qemu | dyninst | ipt
 --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
