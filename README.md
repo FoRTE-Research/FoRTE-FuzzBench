@@ -29,7 +29,6 @@ flac		|flac		|		|		|
 gif2rgb		|giflib		|		|		|
 pngtest		|libpng		|		|		|
 
-
 ## Building Benchmarks
 We provide the script `buildAll.sh` to compiile all benchmarks from source. 
 Edit the following parameters to reflect the desired C and C++ compilers, and any assembler parameters:
