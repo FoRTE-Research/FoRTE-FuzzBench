@@ -29,9 +29,9 @@ flac		|flac		|		|		|
 gif2rgb		|giflib		|		|		|
 pngtest		|libpng		|		|		|
 
-For our paper we collected statistics on the 24-hr fuzzing testcase corpora for each benchmark. Note that these numbers reflect corpora generated using [AFL](http://lcamtuf.coredump.cx/afl/) with QEMU-based tracing.
+For our paper we collected statistics on the 24hr fuzzing testcase corpora for each benchmark. Note that these numbers reflect corpora generated using [AFL](http://lcamtuf.coredump.cx/afl/) with QEMU-based tracing.
 
-benchname | libname | type | 24-hr dump size | inputs/24-hr | 100ms timeouts
+benchname | libname | type | 24hr corpus size | testcases/24hr | 100ms timeouts
 --- | --- | --- | --- | --- | ---
 bsdtar		|libarchive |dev 	| 90.9G | 25.6M | 4 
 cert-basic	|libksba	|crypto | 7.5G 	| 10.7M | 6 
