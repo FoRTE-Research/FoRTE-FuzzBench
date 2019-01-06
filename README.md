@@ -58,14 +58,14 @@ passToAS=""
 ## COLLECTING BENCHMARKS
 We also provide the script `collectAll.py` to copy all compiled benchmarks to the current directory and append them with a user-specific postfix:
 
-You must supply the path to your local copy of the `FoRTE-fuzz-benchmarks` repository in the parameter `basePath`:
+You must supply the path to your local copy of the `forte-fuzzbench` repository in the parameter `basePath`:
 ```
-basePath="/path/to/FoRTE-fuzz-benchmarks/"
+basePath="/path/to/forte-fuzzbench/"
 ```
 
 Then, run as follows:
 ```
-python /path/to/FoRTE-fuzz-benchmarks/collectAll.py [postfix] 
+python /path/to/forte-fuzzbench/collectAll.py [postfix] 
 ```
 
 All benchmarks will be copied and appended to the current directory and appended the specified postfix (leave blank if none).
