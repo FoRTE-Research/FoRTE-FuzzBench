@@ -11,7 +11,7 @@ This repository contains a collection of benchmarks and seed inputs to make fuzz
 |**LICENSE:** | [MIT License](LICENSE) |
 |**DISCLAIMER:**   | This software is strictly a research prototype. |
 
-## Benchmark Statistics
+### Benchmark Statistics
 We utilized [Dyninst](https://dyninst.org/) to compute the following bechmark statistics for the 8 binaries evaluated in our paper *[
 Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](https://arxiv.org/abs/1812.11875)*. Note that we compiled all with Clang/Clang++, and ignore [a number of](https://github.com/FoRTE-Research/UnTracer-AFL/blob/master/UnTracerDyninst.cpp#L378) compiler-inserted initialization functions.  
 
@@ -46,7 +46,7 @@ gif2rgb		|giflib		|img	|	|	|
 pngtest		|libpng		|img	|	|	|
 
 
-## Building Benchmarks
+## BUILDING
 We provide the script `buildAll.sh` to compiile all benchmarks from source. 
 Edit the following parameters to reflect the desired C and C++ compilers, and any assembler parameters:
 ```
@@ -55,7 +55,7 @@ compilerXX=""
 passToAS=""
 ```
 
-## Collecting Benchmarks
+## COLLECTING
 We also provide the script `collectAll.py` to copy all compiled benchmarks to the current directory and append them with a user-specific postfix:
 
 You must supply the path to your local copy of the `FoRTE-fuzz-benchmarks` repository in the parameter `basePath`:
