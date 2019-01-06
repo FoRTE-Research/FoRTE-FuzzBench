@@ -15,7 +15,7 @@ This repository contains a collection of benchmarks and seed inputs to make fuzz
 We utilized [Dyninst](https://dyninst.org/) to compute the following bechmark statistics for the 8 binaries evaluated in our paper *[
 Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](https://arxiv.org/abs/1812.11875)*. Note that we compiled all with Clang/Clang++, and ignore [a number of](https://github.com/FoRTE-Research/UnTracer-AFL/blob/master/UnTracerDyninst.cpp#L378) compiler-inserted initialization functions.  
 
-progname | libname | type | basic blocks | edges (outgoing) | edges (incoming)
+benchname | libname | type | basic blocks | edges (outgoing) | edges (incoming)
 --- | --- | --- | --- | --- | ---
 bsdtar		|libarchive |dev 	|31032	|43390	|43432
 cert-basic	|libksba	|crypto |9897	|14120	|14120
