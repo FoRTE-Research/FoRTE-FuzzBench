@@ -1,4 +1,4 @@
-# FoRTE-fuzz-benchmarks
+# FoRTE-Research's Fuzzing Benchmarks
 
 This repository contains a collection of benchmarks and seed inputs to make fuzzing more easily comparable and reproducable. For instructions on installing and running a given benchmark, refer to the `readme` file in its respective directory.
 
@@ -6,7 +6,7 @@ This repository contains a collection of benchmarks and seed inputs to make fuzz
 
 |             |                |
 |-------------|----------------|
-|**AUTHOR:**  | Stefan Nagy  |
+|**AUTHOR:**  | Stefan Nagy | FoRTE-Research |
 |**EMAIL:**   | snagy2@vt.edu |
 |**LICENSE:** | [MIT License](LICENSE) |
 |**DISCLAIMER:**   | This software is strictly a research prototype. |
