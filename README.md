@@ -15,7 +15,7 @@ This repository contains a collection of benchmarks and seed inputs to make fuzz
 We utilized [Dyninst](https://dyninst.org/) to compute the following bechmark statistics for the 8 binaries evaluated in our paper *[
 Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](https://arxiv.org/abs/1812.11875)*. Note that we compiled all with Clang/Clang++, and ignore [a number of](https://github.com/FoRTE-Research/UnTracer-AFL/blob/master/UnTracerDyninst.cpp#L378) compiler-inserted initialization functions.  
 
-progname | libname | basic blocks | edges (outgoing) | edges (incoming)
+benchname | libname | basic blocks | edges (outgoing) | edges (incoming)
 --- | --- | --- | --- | ---
 bsdtar		|libarchive |31032	|43390	|43432
 cert-basic	|libksba	|9897	|14120	|14120
@@ -28,6 +28,23 @@ tcpdump		|tcpdump	|33229	|48791	|48810
 flac		|flac		|		|		|
 gif2rgb		|giflib		|		|		|
 pngtest		|libpng		|		|		|
+
+For our paper we collected statistics on the 24-hr fuzzing testcase corpora for each benchmark. Note that these numbers reflect corpora generated using [AFL](http://lcamtuf.coredump.cx/afl/) with QEMU-based tracing.
+
+benchname | libname | type | 24-hr dump size | inputs/24-hr | 100ms timeouts
+--- | --- | --- | --- | --- | ---
+bsdtar		|libarchive |dev 	| 90.9G | 25.6M | 4 
+cert-basic	|libksba	|crypto | 7.5G 	| 10.7M | 6 
+cjson 		|cjson		|web 	| 4.5G 	| 14.5M | 221K 	
+djpeg		|libjpeg	|img 	| 30.1G | 21.0M | 656
+pdftohtml	|poppler	|doc 	| 0.2G 	| 1.2M 	| 107 	
+readelf		|binutils	|dev 	| 3.8G 	| 14.9M | 7 
+sfconvert	|audiofile	|audio	| 3.7G 	| 10.1M | 373K 	
+tcpdump		|tcpdump	|net	| 2.7G 	| 27.1M | 5 	
+flac		|flac		|audio	|	|	| 
+gif2rgb		|giflib		|img	|	|	| 
+pngtest		|libpng		|img	|	|	|
+
 
 ## Building Benchmarks
 We provide the script `buildAll.sh` to compiile all benchmarks from source. 
