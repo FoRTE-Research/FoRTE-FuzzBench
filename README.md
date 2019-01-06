@@ -1,6 +1,6 @@
 # FoRTE-fuzz-benchmarks
 
-This repository contains a collection of benchmarks and seed inputs to make fuzzing more easily comparable and reproducable. 
+This repository contains a collection of benchmarks and seed inputs to make fuzzing more easily comparable and reproducable. We selcome any suggested additions to this benchmark corpus.
 
 For instructions on installing and running a given benchmark, refer to the `readme` file in its respective directory.
 
