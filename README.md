@@ -28,24 +28,25 @@ pngtest		|libpng		|		|		|
 
 
 ## Building Benchmarks
+We provide the script `buildAll.sh` to compiile all benchmarks from source. 
+Edit the following parameters to reflect the desired C and C++ compilers, and any assembler parameters:
+```
+compiler=""
+compilerXX=""
+passToAS=""
+```
 
 ## Collecting Benchmarks
+We also provide the script `collectAll.py` to copy all compiled benchmarks to the current directory and append them with a user-specific postfix:
 
-To gather the benchmark binary files in the top-level directory:
-
+You must supply the path to your local copy of the `FoRTE-fuzz-benchmarks` repository in the parameter `basePath`:
 ```
-python collectBins.py
-```
-
-Make sure to verify that the base binaries are non-pie:
-
-```
-find . -maxdepth 1 -name "*Original" -exec bash -c "echo {}; readelf -l {} | grep Entry" \;
+basePath="/path/to/FoRTE-fuzz-benchmarks/"
 ```
 
-
-To gather and rename the benchmark binaries after building with `afl-clang`:
-
+Then, run as follows:
 ```
-python collectBins.py -q
+python /path/to/FoRTE-fuzz-benchmarks/collectAll.py [postfix] 
 ```
+
+All benchmarks will be copied and appended to the current directory and appended the specified postfix (leave blank if none).
