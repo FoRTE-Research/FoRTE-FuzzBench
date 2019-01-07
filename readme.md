@@ -35,17 +35,16 @@ This repository contains a collection of benchmarks and seed inputs to make fuzz
 ## BENCHMARK STATISTICS
 We utilized [Dyninst](https://dyninst.org/) to compute the following bechmark statistics for the 8 binaries evaluated in our paper. Note that we compiled all with Clang/Clang++, and ignore [a number of](https://github.com/FoRTE-Research/UnTracer-AFL/blob/master/UnTracerDyninst.cpp#L378) compiler-inserted initialization functions.  
 
-benchname | libname | type | basic blocks | edges (outgoing) | edges (incoming)
+benchname | libname | type | basic blocks | edges (outgoing)
 --- | --- | --- | --- | --- | ---
-bsdtar		|libarchive |dev 	|31032	|43390	|43432
-cert-basic	|libksba	|crypto |9897	|14120	|14120
-cjson 		|cjson		|web 	|1377	|2038 	|2038
-djpeg		|libjpeg	|img 	|4763	|6776	|6776
-pdftohtml	|poppler	|doc 	|54375	|71945 	|71945
-readelf		|binutils	|dev 	|21085	|31086 	|31270
-sfconvert	|audiofile	|audio	|5496	|7403 	|7403
-tcpdump		|tcpdump	|net	|33229	|48791	|48810
-
+bsdtar		|libarchive |dev 	|31032	|43390	
+cert-basic	|libksba	|crypto |9897	|14120	
+cjson 		|cjson		|web 	|1377	|2038 	
+djpeg		|libjpeg	|img 	|4763	|6776	
+pdftohtml	|poppler	|doc 	|54375	|71945 	
+readelf		|binutils	|dev 	|21085	|31086 	
+sfconvert	|audiofile	|audio	|5496	|7403 	
+tcpdump		|tcpdump	|net	|33229	|48791	
 For our paper, we collected statistics on the 24hr fuzzing testcase corpora for each benchmark. Note that these numbers reflect corpora generated using [AFL](http://lcamtuf.coredump.cx/afl/) with QEMU-based tracing.
 
 benchname | libname | type | 24hr corpus size | testcases/24hr | 100ms timeouts
