@@ -1,13 +1,11 @@
 # FoRTE-Research's Fuzzing Benchmarks
 
 This repository contains a collection of benchmarks and seed inputs (as presented in our paper *[
-Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](https://arxiv.org/abs/1812.11875)*) to make fuzzing more easily comparable and reproducable. For instructions on installing and running a given benchmark, refer to the `readme` file in its respective directory. 
-
-**We welcome any suggested additions to this fuzzing benchmark corpus!**
+Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](https://arxiv.org/abs/1812.11875)*) to make fuzzing more easily comparable and reproducable. For instructions on installing and running a given benchmark, refer to the `readme` file in its respective directory. **We welcome any suggested additions to this fuzzing benchmark corpus!**
 
 <table>
   <tr>
-    <td colspan="2"><p ALIGN=CENTER><b>Presented in our paper</b> <a href="https://arxiv.org/abs/1812.11875"><i>Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing</i></a><br>(to appear in the 2019 IEEE Symposium on Security and Privacy).</p></td>
+    <td colspan="2"><p align=center><b>Presented in our paper</b> <a href="https://arxiv.org/abs/1812.11875"><i>Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing</i></a><br>(to appear in the 2019 IEEE Symposium on Security and Privacy).</p></td>
   </tr>
   <tr>
     <td><b>Citing this repository:</b></td>
