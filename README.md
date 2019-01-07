@@ -1,17 +1,37 @@
 # FoRTE-Research's Fuzzing Benchmarks
-**Presented in our paper** *[Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](https://arxiv.org/abs/1812.11875)* (appearing in IEEE S&P 2019).
-
-|             |                |
-|-------------|----------------|
-|**AUTHOR:**  | Stefan Nagy |
-|**EMAIL:**   | snagy2@vt.edu |
-|**LICENSE:** | [MIT License](LICENSE) |
-|**DISCLAIMER:**   | This software is strictly a research prototype. |
 
 This repository contains a collection of benchmarks and seed inputs (as presented in our paper *[
 Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](https://arxiv.org/abs/1812.11875)*) to make fuzzing more easily comparable and reproducable. For instructions on installing and running a given benchmark, refer to the `readme` file in its respective directory. 
 
 **We welcome any suggested additions to this fuzzing benchmark corpus!**
+
+<table>
+  <tr>
+    <td colspan="2"><p ALIGN=CENTER><b>Presented in our paper</b> <a href="https://arxiv.org/abs/1812.11875"><i>Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing</i></a><br>(to appear in the 2019 IEEE Symposium on Security and Privacy).</p></td>
+  </tr>
+  <tr>
+    <td><b>Citing this repository:</b></td>
+    <td>
+      <code class="rich-diff-level-one">@inproceedings{nagy:fullspeedfuzzing,</code><br>
+      <code class="rich-diff-level-one">title = {Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing},</code><br>
+      <code class="rich-diff-level-one">author = {Stefan Nagy and Matthew Hicks},</code><br>
+      <code class="rich-diff-level-one">booktitle = {40th {IEEE} Symposium on Security and Privacy (S&P)},</code><br>
+      <code class="rich-diff-level-one">year = {2019},}</code>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Developer:</b></td>
+    <td>Stefan Nagy (<a href="mailto:snagy2@vt.edu">snagy2@vt.edu</a>)</td>
+  </tr>
+  <tr>
+    <td><b>License:</b></td>
+    <td><a href="/FoRTE-Research/UnTracer-AFL/blob/master/LICENSE">MIT License</a></td>
+  </tr>
+  <tr>
+    <td><b>Disclaimer:</b></td>
+    <td><i>This software is strictly a research prototype.</i></td>
+  </tr>
+</table>
 
 ## BENCHMARK STATISTICS
 We utilized [Dyninst](https://dyninst.org/) to compute the following bechmark statistics for the 8 binaries evaluated in our paper. Note that we compiled all with Clang/Clang++, and ignore [a number of](https://github.com/FoRTE-Research/UnTracer-AFL/blob/master/UnTracerDyninst.cpp#L378) compiler-inserted initialization functions.  
