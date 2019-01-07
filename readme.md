@@ -2,7 +2,7 @@
 
 This repository contains a collection of benchmarks and seed inputs to make fuzzing research more readily comparable and reproducable. For instructions on installing and running a given benchmark, refer to the `readme` file in its respective directory. 
 
-**We welcome any suggestions for improving this fuzzing benchmark corpus!** Our only criteria for additional benchmarks is that they are compatible with **AFL-Dyninst**, **AFL-QEMU**, and **AFL-Clang** tracing (as all 8 below are). 
+**We welcome any suggestions for improving this fuzzing benchmark corpus!** Our only criteria for additional benchmarks is that they are compatible with **AFL-Clang**, **AFL-QEMU**, and **AFL-Dyninst** tracing (as all 8 below are). 
 
 <table>
   <tr>
