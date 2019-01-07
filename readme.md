@@ -36,7 +36,7 @@ This repository contains a collection of benchmarks and seed inputs to make fuzz
 We utilized [Dyninst](https://dyninst.org/) to compute the following bechmark statistics for the 8 binaries evaluated in our paper. Note that we compiled all with Clang/Clang++, and ignore [a number of](https://github.com/FoRTE-Research/UnTracer-AFL/blob/master/UnTracerDyninst.cpp#L378) compiler-inserted initialization functions.  
 
 benchname | libname | type | basic blocks | edges (outgoing)
---- | --- | --- | --- | --- | ---
+--- | --- | --- | --- | ---
 bsdtar		|libarchive |dev 	|31032	|43390	
 cert-basic	|libksba	|crypto |9897	|14120	
 cjson 		|cjson		|web 	|1377	|2038 	
