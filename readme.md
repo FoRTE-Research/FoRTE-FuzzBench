@@ -35,7 +35,7 @@ This repository contains a collection of benchmarks and seed inputs to make fuzz
 ## BENCHMARK STATISTICS
 We utilized [Dyninst](https://dyninst.org/) to compute the following bechmark statistics for the 8 binaries evaluated in our paper. Note that we compiled all with Clang/Clang++.
 
-benchname | libname | type | basic blocks | edges (outgoing)
+benchname | libname | type | basic blocks | basic block edges
 --- | --- | --- | --- | ---
 bsdtar		|libarchive |dev 	|31379	|43390	
 cert-basic	|libksba	|crypto |9958	|14120	
