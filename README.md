@@ -1,6 +1,7 @@
 # FoRTE-Research's Fuzzing Benchmarks
 
-This repository contains a collection of benchmarks and seed inputs to make fuzzing more easily comparable and reproducable. For instructions on installing and running a given benchmark, refer to the `readme` file in its respective directory.
+This repository contains a collection of benchmarks and seed inputs (as presented in our paper *[
+Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](https://arxiv.org/abs/1812.11875)*) to make fuzzing more easily comparable and reproducable. For instructions on installing and running a given benchmark, refer to the `readme` file in its respective directory. 
 
 **We welcome any suggested additions to this fuzzing benchmark corpus!**
 
@@ -12,8 +13,7 @@ This repository contains a collection of benchmarks and seed inputs to make fuzz
 |**DISCLAIMER:**   | This software is strictly a research prototype. |
 
 ## BENCHMARK STATISTICS
-We utilized [Dyninst](https://dyninst.org/) to compute the following bechmark statistics for the 8 binaries evaluated in our paper *[
-Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](https://arxiv.org/abs/1812.11875)*. Note that we compiled all with Clang/Clang++, and ignore [a number of](https://github.com/FoRTE-Research/UnTracer-AFL/blob/master/UnTracerDyninst.cpp#L378) compiler-inserted initialization functions.  
+We utilized [Dyninst](https://dyninst.org/) to compute the following bechmark statistics for the 8 binaries evaluated in our paper. Note that we compiled all with Clang/Clang++, and ignore [a number of](https://github.com/FoRTE-Research/UnTracer-AFL/blob/master/UnTracerDyninst.cpp#L378) compiler-inserted initialization functions.  
 
 benchname | libname | type | basic blocks | edges (outgoing) | edges (incoming)
 --- | --- | --- | --- | --- | ---
