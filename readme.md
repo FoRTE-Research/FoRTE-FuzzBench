@@ -45,6 +45,7 @@ pdftohtml	|poppler	|doc 	|54375	|71945
 readelf		|binutils	|dev 	|21085	|31086 	
 sfconvert	|audiofile	|audio	|5496	|7403 	
 tcpdump		|tcpdump	|net	|33229	|48791	
+
 For our paper, we collected statistics on the 24hr fuzzing testcase corpora for each benchmark. Note that these numbers reflect corpora generated using [AFL](http://lcamtuf.coredump.cx/afl/) with QEMU-based tracing.
 
 benchname | libname | type | 24hr corpus size | testcases/24hr | 100ms timeouts
