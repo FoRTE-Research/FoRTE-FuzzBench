@@ -43,9 +43,6 @@ pdftohtml	|poppler	|doc 	|54375	|71945 	|71945
 readelf		|binutils	|dev 	|21085	|31086 	|31270
 sfconvert	|audiofile	|audio	|5496	|7403 	|7403
 tcpdump		|tcpdump	|net	|33229	|48791	|48810
-flac		|flac		|audio	|		|		|
-gif2rgb		|giflib		|img	|		|		|
-pngtest		|libpng		|img	|		|		|
 
 For our paper, we collected statistics on the 24hr fuzzing testcase corpora for each benchmark. Note that these numbers reflect corpora generated using [AFL](http://lcamtuf.coredump.cx/afl/) with QEMU-based tracing.
 
@@ -59,9 +56,6 @@ pdftohtml	|poppler	|doc 	| 0.2G 	| 1.2M 	| 107
 readelf		|binutils	|dev 	| 3.8G 	| 14.9M | 7 
 sfconvert	|audiofile	|audio	| 3.7G 	| 10.1M | 373K 	
 tcpdump		|tcpdump	|net	| 2.7G 	| 27.1M | 5 	
-flac		|flac		|audio	|	|	| 
-gif2rgb		|giflib		|img	|	|	| 
-pngtest		|libpng		|img	|	|	|
 
 
 ## BUILDING BENCHMARKS

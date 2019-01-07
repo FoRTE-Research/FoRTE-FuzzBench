@@ -5,15 +5,14 @@ import os
 basePath = ''
 
 benches = []
-
-benches.append(('readelf',      basePath + '/binutils/binutils-2.30/binutils'))
-benches.append(('djpeg',        basePath + '/libjpeg/jpeg-9c'))
 benches.append(('bsdtar',       basePath + '/libarchive/libarchive-3.3.2'))
-benches.append(('tcpdump',      basePath + '/tcpdump/tcpdump-4.9.2'))
-benches.append(('sfconvert',    basePath + '/audiofile/audiofile-0.2.7/sfcommands'))
-benches.append(('pdftohtml',    basePath + '/poppler/poppler-0.22.5/utils'))
 benches.append(('cert-basic',   basePath + '/libksba/libksba-1.3.5/tests'))
 benches.append(('cjson',        basePath + '/cjson/cjson-1.7.7/fuzzing'))
+benches.append(('djpeg',        basePath + '/libjpeg/jpeg-9c'))
+benches.append(('pdftohtml',    basePath + '/poppler/poppler-0.22.5/utils'))
+benches.append(('readelf',      basePath + '/binutils/binutils-2.30/binutils'))
+benches.append(('sfconvert',    basePath + '/audiofile/audiofile-0.2.7/sfcommands'))
+benches.append(('tcpdump',      basePath + '/tcpdump/tcpdump-4.9.2'))
 
 postfix = ""
 status = "Copying to "+os.getcwd()+"...\n"
