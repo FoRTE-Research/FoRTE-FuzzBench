@@ -1,9 +1,5 @@
 # FoRTE-Research's Fuzzing Benchmarks
-
-This repository contains a collection of benchmarks and seed inputs (as presented in our paper *[
-Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](https://arxiv.org/abs/1812.11875)*) to make fuzzing more easily comparable and reproducable. For instructions on installing and running a given benchmark, refer to the `readme` file in its respective directory. 
-
-**We welcome any suggested additions to this fuzzing benchmark corpus!**
+**Presented in our paper** *[Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](https://arxiv.org/abs/1812.11875)* (appearing in IEEE S&P 2019).
 
 |             |                |
 |-------------|----------------|
@@ -11,6 +7,11 @@ Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](h
 |**EMAIL:**   | snagy2@vt.edu |
 |**LICENSE:** | [MIT License](LICENSE) |
 |**DISCLAIMER:**   | This software is strictly a research prototype. |
+
+This repository contains a collection of benchmarks and seed inputs (as presented in our paper *[
+Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing](https://arxiv.org/abs/1812.11875)*) to make fuzzing more easily comparable and reproducable. For instructions on installing and running a given benchmark, refer to the `readme` file in its respective directory. 
+
+**We welcome any suggested additions to this fuzzing benchmark corpus!**
 
 ## BENCHMARK STATISTICS
 We utilized [Dyninst](https://dyninst.org/) to compute the following bechmark statistics for the 8 binaries evaluated in our paper. Note that we compiled all with Clang/Clang++, and ignore [a number of](https://github.com/FoRTE-Research/UnTracer-AFL/blob/master/UnTracerDyninst.cpp#L378) compiler-inserted initialization functions.  
