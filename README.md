@@ -87,3 +87,7 @@ python /path/to/FoRTE-FuzzBench/collectAll.py [postfix]
 ```
 
 All benchmarks will be copied and appended to the current directory and appended the specified postfix (leave blank if none).
+
+## 
+<p align=center> <a href="https:/www.cs.vt.edu"><img border="0" alt="W3Schools" src="http://people.cs.vt.edu/snagy2/img/vt_inline_computer_science.png" width="60%" height="60%">
+</a> </p>
