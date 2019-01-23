@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#compiler="clang"
-#compilerXX="clang++"
-compiler="afl-clang"
-compilerXX="afl-clang++"
+compiler="clang"
+compilerXX="clang++"
+#compiler="afl-clang"
+#compilerXX="afl-clang++"
 passToAS=""
 
 baseDir=`pwd`
