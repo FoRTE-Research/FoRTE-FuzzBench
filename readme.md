@@ -61,6 +61,11 @@ tcpdump		|tcpdump	|net	| 2.7G 	| 27.1M | 5
 
 
 ## BUILDING BENCHMARKS
+Before you attempt to build the benchmarks, there are several dependencies that you must resolve:
+```
+sudo apt install build-essential clang libgpg-error-dev libfontconfig1-dev libpcap-dev
+```
+
 We provide the script `buildAll.sh` to compile all benchmarks from source. 
 Edit the following parameters to reflect the desired C and C++ compilers, and any assembler parameters:
 ```
