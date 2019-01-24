@@ -73,21 +73,17 @@ compiler=""
 compilerXX=""
 passToAS=""
 ```
+Before building using AFL-modified compilers, make sure to upate `PATH` and `AFL-PATH` system variables to point to where you have AFL installed.
 
 ## COLLECTING BENCHMARKS
 We also provide the script `collectAll.py` to copy all compiled benchmark binaries to the current directory and append them with a use-specific (as specified on the command line) postfix:
 
-You must supply the path to your local copy of the `FoRTE-FuzzBench` repository in the parameter `basePath`:
+Run as follows:
 ```
-basePath="/path/to/FoRTE-FuzzBench/"
-```
-
-Then, run as follows:
-```
-python /path/to/FoRTE-FuzzBench/collectAll.py [postfix type] 
+python /path/to/FoRTE-FuzzBench/collectAll.py path/to/FoRTE-FuzzBench [binaryPostfix] 
 ```
 
-All benchmarks will be copied and appended to the current directory and appended the specified postfix (leave blank if none).
+All benchmarks will be copied to the current directory and appended the specified postfix (leave blank if none).
 
 #
 <p align=center> <a href="https://www.cs.vt.edu"><img border="0" src="http://people.cs.vt.edu/snagy2/img/vt_inline_computer_science.png" width="60%" height="60%">
