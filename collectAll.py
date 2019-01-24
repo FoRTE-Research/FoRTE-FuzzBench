@@ -8,7 +8,7 @@ usage = """
          Call this script from whichever directory you                                                                                                                                                        
          wish the benchmarks to be deposited in:                                                                                                                                                              
                                                                                                                                                                                                               
-         python /path/to/collectAll.py  path/to/FuzzBench [binaryPostfix]                                                                                                                                     
+         python /path/to/collectAll.py [binaryPostfix]                                                                                                                                     
                                                                                                                                                                                                               
          All benchmarks will be copied to the current folder                                                                                                                                                  
          and appended with the specified postfix (leave blank if none).                                                                                                                                       
