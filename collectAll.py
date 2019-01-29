@@ -5,10 +5,7 @@ import os
 usage = """                                                                                                                                                                                                   
         USAGE:                                                                                                                                                                                                
                                                                                                                                                                                                               
-         Call this script from whichever directory you                                                                                                                                                        
-         wish the benchmarks to be deposited in:                                                                                                                                                              
-                                                                                                                                                                                                              
-         python /path/to/collectAll.py [destination] [postfix]                                                                                                                                     
+         python collectAll.py [/path/to/destination] [postfix]                                                                                                                                     
                                                                                                                                                                                                               
          All benchmarks will be copied to the current folder                                                                                                                                                  
          and appended with the specified postfix (leave blank if none).                                                                                                                                       
