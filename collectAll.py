@@ -5,7 +5,7 @@ import os
 usage = """                                                                                                                                                                                                   
         USAGE:                                                                                                                                                                                                
                                                                                                                                                                                                               
-         python collectAll.py [/path/to/destination] [postfix]                                                                                                                                     
+         python /path/to/FoRTE-FuzzBench/collectAll.py path/to/FoRTE-FuzzBench [binaryPostfix]                                                                                                                                  
                                                                                                                                                                                                               
          All benchmarks will be copied to the current folder                                                                                                                                                  
          and appended with the specified postfix (leave blank if none).                                                                                                                                       
