@@ -50,7 +50,7 @@ For our paper, we collected statistics on the 24hr fuzzing testcase corpora for 
 
 benchname | libname | type | 24hr corpus size | testcases/24hr | 100ms timeouts
 --- | --- | --- | --- | --- | ---
-bsdtar		|libarchive |dev 	| 90.9G | 25.6M | 4 
+bsdtar		|libarchive |archiv 	| 90.9G | 25.6M | 4 
 cert-basic	|libksba	|crypto | 7.5G 	| 10.7M | 6 
 cjson 		|cjson		|web 	| 4.5G 	| 14.5M | 221K 	
 djpeg		|libjpeg	|img 	| 30.1G | 21.0M | 656
