@@ -37,7 +37,7 @@ We utilized [Dyninst](https://dyninst.org/) to compute the following bechmark st
 
 benchname | libname | type | basic blocks | basic block edges
 --- | --- | --- | --- | ---
-bsdtar		|libarchive |dev 	|31379	|43390	
+bsdtar		|libarchive |archiv 	|31379	|43390	
 cert-basic	|libksba	|crypto |9958	|14120	
 cjson 		|cjson		|web 	|1447	|2038 	
 djpeg		|libjpeg	|img 	|4844	|6776	
