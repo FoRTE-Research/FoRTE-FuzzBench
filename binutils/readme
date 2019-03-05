@@ -2,7 +2,7 @@ binutils/readelf
 
 Install instructions:
 
-	tar -xf binutils-2.30.tar.xz
+	tar -xzf binutils-2.30.tar.xz
 	cd binutils-2.30/
 	./configure --disable-shared CFLAGS="-g -O2 -no-pie" CXXFLAGS="-g -O2 -no-pie"
 	make all
