@@ -80,7 +80,7 @@ We also provide the script `collectAll.py` to copy all compiled benchmark binari
 
 Run as follows:
 ```
-python /path/to/FoRTE-FuzzBench/collectAll.py path/to/FoRTE-FuzzBench [binaryPostfix] 
+python /path/to/FoRTE-FuzzBench/collectAll.py [binaryPostfix] 
 ```
 
 All benchmarks will be copied to the current directory and appended the specified postfix (leave blank if none).
